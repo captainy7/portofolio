@@ -1,0 +1,151 @@
+export const personalInfo = {
+  name: "Satria",
+  role: "Full-Stack Developer",
+  tagline: "Building digital experiences with code & creativity",
+  bio: "I'm a passionate full-stack developer who loves crafting beautiful, performant web applications. With expertise in modern JavaScript ecosystems, I turn complex problems into elegant solutions.",
+  avatar: "/avatar.jpg",
+  location: "Indonesia",
+  email: "satria@email.com",
+  social: {
+    github: "https://github.com/satria",
+    linkedin: "https://linkedin.com/in/satria",
+    twitter: "https://twitter.com/satria",
+  },
+  resumeUrl: "/resume.pdf",
+};
+
+export const skills = [
+  { name: "React", category: "Frontend" },
+  { name: "Next.js", category: "Frontend" },
+  { name: "TypeScript", category: "Language" },
+  { name: "Node.js", category: "Backend" },
+  { name: "Go", category: "Backend" },
+  { name: "PostgreSQL", category: "Database" },
+  { name: "Tailwind CSS", category: "Frontend" },
+  { name: "Docker", category: "DevOps" },
+  { name: "GraphQL", category: "Backend" },
+  { name: "Prisma", category: "Database" },
+  { name: "Redis", category: "Database" },
+  { name: "AWS", category: "DevOps" },
+];
+
+export const experiences = [
+  {
+    id: 1,
+    role: "Senior Software Engineer",
+    company: "Tech Corp",
+    period: "2023 - Present",
+    description: "Building scalable microservices architecture serving 1M+ users.",
+    highlights: [
+      "Led migration from monolith to microservices",
+      "Reduced API latency by 60%",
+      "Mentored 3 junior engineers",
+    ],
+  },
+  {
+    id: 2,
+    role: "Full-Stack Developer",
+    company: "StartupXYZ",
+    period: "2021 - 2023",
+    description: "Developed and maintained the core product platform.",
+    highlights: [
+      "Built real-time collaboration features",
+      "Implemented CI/CD pipeline reducing deploy time by 80%",
+      "Shipped 20+ major features",
+    ],
+  },
+  {
+    id: 3,
+    role: "Junior Developer",
+    company: "Digital Agency",
+    period: "2019 - 2021",
+    description: "Created responsive web applications for diverse clients.",
+    highlights: [
+      "Delivered 30+ client projects on time",
+      "Introduced component library reducing dev time by 40%",
+      "Won internal hackathon twice",
+    ],
+  },
+];
+
+export const projects = [
+  {
+    id: 1,
+    title: "Flowboard",
+    description: "Real-time collaborative kanban board with drag-and-drop, team management, and analytics.",
+    image: "/projects/flowboard.jpg",
+    tags: ["Next.js", "TypeScript", "Prisma", "WebSocket"],
+    liveUrl: "https://flowboard.example.com",
+    githubUrl: "https://github.com/satria/flowboard",
+    featured: true,
+  },
+  {
+    id: 2,
+    title: "Pulse API",
+    description: "High-performance API gateway with rate limiting, caching, and observability built-in.",
+    image: "/projects/pulse.jpg",
+    tags: ["Go", "Redis", "Docker", "gRPC"],
+    liveUrl: "https://pulseapi.example.com",
+    githubUrl: "https://github.com/satria/pulse-api",
+    featured: true,
+  },
+  {
+    id: 3,
+    title: "Lumina",
+    description: "AI-powered image editor with smart filters, background removal, and batch processing.",
+    image: "/projects/lumina.jpg",
+    tags: ["React", "Python", "TensorFlow", "AWS"],
+    liveUrl: "https://lumina.example.com",
+    githubUrl: "https://github.com/satria/lumina",
+    featured: true,
+  },
+  {
+    id: 4,
+    title: "DevMetrics",
+    description: "Developer productivity dashboard integrating GitHub, Jira, and Slack metrics.",
+    image: "/projects/devmetrics.jpg",
+    tags: ["Next.js", "GraphQL", "PostgreSQL", "D3.js"],
+    liveUrl: "https://devmetrics.example.com",
+    githubUrl: "https://github.com/satria/devmetrics",
+    featured: false,
+  },
+  {
+    id: 5,
+    title: "KitaChat",
+    description: "Open-source chat platform with end-to-end encryption and file sharing.",
+    image: "/projects/kitachat.jpg",
+    tags: ["React", "Node.js", "WebSocket", "MongoDB"],
+    githubUrl: "https://github.com/satria/kitachat",
+    featured: false,
+  },
+];
+
+export const blogPosts = [
+  {
+    slug: "building-scalable-apis-with-go",
+    title: "Building Scalable APIs with Go",
+    excerpt: "Learn how to design and implement production-ready APIs using Go's standard library and popular frameworks.",
+    date: "2024-12-15",
+    readTime: "8 min read",
+    tags: ["Go", "API", "Backend"],
+    image: "/blog/go-api.jpg",
+  },
+  {
+    slug: "mastering-nextjs-app-router",
+    title: "Mastering Next.js App Router",
+    excerpt: "Deep dive into the App Router patterns, server components, and data fetching strategies.",
+    date: "2024-11-20",
+    readTime: "12 min read",
+    tags: ["Next.js", "React", "Frontend"],
+    image: "/blog/nextjs.jpg",
+  },
+  {
+    slug: "docker-compose-for-development",
+    title: "Docker Compose for Local Development",
+    excerpt: "Set up a complete development environment with hot reloading, databases, and services.",
+    date: "2024-10-05",
+    readTime: "6 min read",
+    tags: ["Docker", "DevOps", "Tools"],
+    image: "/blog/docker.jpg",
+  },
+];
