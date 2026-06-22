@@ -26,14 +26,14 @@ export function BlogCard({
 }: BlogCardProps) {
   return (
     <motion.article
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
-      transition={{ delay: index * 0.1 }}
+      viewport={{ once: true }}
+      transition={{ delay: index * 0.08 }}
     >
       <Link href={`/blog/${slug}`} className="group block">
-        <div className="rounded-xl border bg-card p-6 shadow-sm transition-all duration-200 hover:shadow-md hover:border-primary/20 group-hover:border-primary/20">
-          <div className="mb-3 flex items-center gap-3 text-xs text-muted-foreground">
+        <div className="rounded-base border-2 border-border bg-secondary-background p-6 shadow-shadow transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none">
+          <div className="mb-3 flex items-center gap-3 text-xs font-base text-muted-foreground">
             <span className="flex items-center gap-1">
               <Calendar className="h-3.5 w-3.5" />
               {date}
@@ -44,10 +44,10 @@ export function BlogCard({
             </span>
           </div>
 
-          <h2 className="mb-2 text-lg font-semibold transition-colors group-hover:text-primary">
+          <h2 className="mb-2 font-heading font-bold group-hover:text-main transition-colors">
             {title}
           </h2>
-          <p className="mb-4 text-sm leading-relaxed text-muted-foreground line-clamp-2">
+          <p className="mb-4 text-sm font-base leading-relaxed text-muted-foreground line-clamp-2">
             {excerpt}
           </p>
 
@@ -59,7 +59,7 @@ export function BlogCard({
                 </Badge>
               ))}
             </div>
-            <span className="flex items-center gap-1 text-xs font-medium text-primary opacity-0 transition-all duration-200 group-hover:opacity-100">
+            <span className="flex items-center gap-1 text-xs font-base font-semibold text-main">
               Read more
               <ArrowRight className="h-3 w-3" />
             </span>

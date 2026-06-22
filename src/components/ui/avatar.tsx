@@ -26,8 +26,9 @@ const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(
           <img
             src={src}
             alt={alt || ""}
-            className="aspect-square h-full w-full object-cover"
+            className="h-full w-full object-cover"
             onError={() => setError(true)}
+            loading="lazy"
           />
         ) : (
           <div className="flex h-full w-full items-center justify-center bg-muted text-sm font-medium text-muted-foreground">

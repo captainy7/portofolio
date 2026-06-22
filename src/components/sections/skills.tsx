@@ -5,59 +5,49 @@ import { skills } from "@/data/portfolio";
 import { cn } from "@/lib/utils";
 
 const categoryColors: Record<string, string> = {
-  Frontend: "border-primary/30 bg-primary/5 text-primary",
-  Backend: "border-secondary/30 bg-secondary/5 text-secondary",
-  Language: "border-accent/30 bg-accent/5 text-accent",
-  Database: "border-amber-500/30 bg-amber-500/5 text-amber-500",
-  DevOps: "border-emerald-500/30 bg-emerald-500/5 text-emerald-500",
+  Frontend: "bg-main text-main-foreground",
+  Backend: "bg-main text-main-foreground",
+  Language: "bg-main text-main-foreground",
+  Database: "bg-main text-main-foreground",
+  DevOps: "bg-main text-main-foreground",
 };
 
 const categories = [...new Set(skills.map((s) => s.category))];
 
 export function Skills() {
   return (
-    <section className="py-20">
+    <section className="py-12">
       <div className="mx-auto max-w-4xl px-6">
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-            Skills & Technologies
-          </h2>
-          <p className="mt-3 text-muted-foreground">
-            Tools and technologies I work with on a daily basis.
-          </p>
-        </div>
+        <h2 className="mb-1 text-2xl font-heading font-bold tracking-tight sm:text-2xl">
+          Skills
+        </h2>
+        <p className="mb-6 font-base text-muted-foreground">
+          Tools and technologies I work with.
+        </p>
 
-        <div className="space-y-8">
+        <div className="space-y-6">
           {categories.map((category, catIdx) => (
             <motion.div
               key={category}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
+              viewport={{ once: true }}
               transition={{ delay: catIdx * 0.1 }}
             >
-              <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+              <h3 className="mb-2 text-xs font-heading font-bold uppercase tracking-wider text-muted-foreground">
                 {category}
               </h3>
               <div className="flex flex-wrap gap-2">
                 {skills
                   .filter((s) => s.category === category)
-                  .map((skill, idx) => (
-                    <motion.div
+                  .map((skill) => (
+                    <span
                       key={skill.name}
-                      initial={{ opacity: 0, scale: 0.9 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: idx * 0.05 + catIdx * 0.1 }}
-                      whileHover={{ scale: 1.05, y: -2 }}
-                      className={cn(
-                        "rounded-xl border px-4 py-2 text-sm font-medium transition-all duration-200",
-                        categoryColors[category] ||
-                          "border-border bg-muted text-foreground"
-                      )}
+                      className="inline-flex items-center gap-2 rounded-base border-2 border-border bg-secondary-background px-3 py-1.5 text-sm font-base shadow-shadow"
                     >
                       {skill.name}
-                    </motion.div>
+                      <span className="text-xs text-muted-foreground">{skill.level}%</span>
+                    </span>
                   ))}
               </div>
             </motion.div>
