@@ -12,7 +12,6 @@ export function JsonLd() {
     sameAs: [
       personalInfo.social.github,
       personalInfo.social.linkedin,
-      personalInfo.social.twitter,
     ],
     jobTitle: personalInfo.role,
     description: personalInfo.bio,
@@ -21,7 +20,7 @@ export function JsonLd() {
       "@type": "PostalAddress",
       addressCountry: "Indonesia",
     },
-    knowsAbout: ["React", "Next.js", "TypeScript", "Node.js", "Go", "Web Development"],
+    knowsAbout: ["React", "Next.js", "TypeScript", "Node.js", "NestJS", "Web Development"],
   };
 
   return (
