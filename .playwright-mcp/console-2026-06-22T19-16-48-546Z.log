@@ -1,0 +1,38 @@
+[     276ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://portofolio-hcld6a139-captainy7s-projects.vercel.app/:0
+[    1203ms] [LOG] %c
+▲
+
+ _____ _              _                    _   _             __
+|_   _| |__   ___    / \   __ _  ___ _ __ | |_(_) ___       / /
+  | | | '_ \ / _ \  / _ \ / _` |/ _ \ '_ \| __| |/ __|     / /
+  | | | | | |  __/ / ___ \ (_| |  __/ | | | |_| | (__     /_/
+  |_| |_| |_|\___|/_/   \_\__, |\___|_| |_|\__|_|\___|    (_)
+                           |___/
+ ___        __               _                   _                 _
+|_ _|_ __  / _|_ __ __ _ ___| |_ _ __ _   _  ___| |_ _   _ _ __ ___
+ | || '_ \| |_| '__/ _` / __| __| '__| | | |/ __| __| | | | '__/ _ \
+ | || | | |  _| | | (_| \__ \ |_| |  | |_| | (__| |_| |_| | | |  __/
+|___|_| |_|_| |_|  \__,_|___/\__|_|   \__,_|\___|\__|\__,_|_|  \___|
+  
+
+Hello!
+
+- Open Source https://vercel.com/oss
+- Careers https://vercel.com/careers
+- Status https://vercel-status.com
+
+ font-family: "Geist Mono", monospace; white-space: pre; line-height: 1; @ https://vercel.com/_next/static/immutable/chunks/2v4re5sjm46o_.js:108
+[    1924ms] [WARNING] [GSI_LOGGER]: Your client application uses one of the Google One Tap prompt UI status methods that may stop functioning when FedCM becomes mandatory. Refer to the migration guide to update your code accordingly and opt-in to FedCM to test your changes. Learn more: https://developers.google.com/identity/gsi/web/guides/fedcm-migration?s=dc#display_moment and https://developers.google.com/identity/gsi/web/guides/fedcm-migration?s=dc#skipped_moment @ https://accounts.google.com/gsi/client:86
+[    1931ms] [ERROR] Not signed in with the identity provider. @ https://vercel.com/login?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Fportofolio-hcld6a139-captainy7s-projects.vercel.app%252F%26nonce%3Df98efee6e1d773310e273e09788ea527c63b9af6344cf69ddba62ce2abccf686:0
+[    2037ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://vercel.com/api/jwt:0
+[    2501ms] [WARNING] Deprecated API for given entry type. @ https://vercel.com/_next/static/immutable/chunks/2pior404zc98i.js:18
+[    5791ms] [ERROR] [GSI_LOGGER]: FedCM get() rejects with NetworkError: Error retrieving a token. @ https://vercel.com/_next/static/immutable/chunks/0zjia2l51bp6x.js:8
+[    5878ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://o205439.ingest.sentry.io/api/1323670/envelope/?sentry_key=d00780d432ac4ccf882f60dd02062e14&sentry_version=7&sentry_client=sentry.javascript.browser%2F7.111.0:0
+[    8930ms] [WARNING] The resource https://vercel.com/_next/static/immutable/chunks/3l1vkaiao2o7o.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/login?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Fportofolio-hcld6a139-captainy7s-projects.vercel.app%252F%26nonce%3Df98efee6e1d773310e273e09788ea527c63b9af6344cf69ddba62ce2abccf686:0
+[    8930ms] [WARNING] The resource https://vercel.com/_next/static/immutable/chunks/0t1alnnol1spf.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/login?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Fportofolio-hcld6a139-captainy7s-projects.vercel.app%252F%26nonce%3Df98efee6e1d773310e273e09788ea527c63b9af6344cf69ddba62ce2abccf686:0
+[    8930ms] [WARNING] The resource https://vercel.com/_next/static/immutable/chunks/1777f8dhtch_9.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/login?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Fportofolio-hcld6a139-captainy7s-projects.vercel.app%252F%26nonce%3Df98efee6e1d773310e273e09788ea527c63b9af6344cf69ddba62ce2abccf686:0
+[    8930ms] [WARNING] The resource https://vercel.com/_next/static/immutable/chunks/1_-gzlz1lfys2.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/login?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Fportofolio-hcld6a139-captainy7s-projects.vercel.app%252F%26nonce%3Df98efee6e1d773310e273e09788ea527c63b9af6344cf69ddba62ce2abccf686:0
+[   15791ms] [WARNING] The resource https://vercel.com/_next/static/immutable/chunks/3l1vkaiao2o7o.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/login?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Fportofolio-hcld6a139-captainy7s-projects.vercel.app%252F%26nonce%3Df98efee6e1d773310e273e09788ea527c63b9af6344cf69ddba62ce2abccf686:0
+[   15792ms] [WARNING] The resource https://vercel.com/_next/static/immutable/chunks/0t1alnnol1spf.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/login?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Fportofolio-hcld6a139-captainy7s-projects.vercel.app%252F%26nonce%3Df98efee6e1d773310e273e09788ea527c63b9af6344cf69ddba62ce2abccf686:0
+[   15792ms] [WARNING] The resource https://vercel.com/_next/static/immutable/chunks/1777f8dhtch_9.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/login?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Fportofolio-hcld6a139-captainy7s-projects.vercel.app%252F%26nonce%3Df98efee6e1d773310e273e09788ea527c63b9af6344cf69ddba62ce2abccf686:0
+[   15792ms] [WARNING] The resource https://vercel.com/_next/static/immutable/chunks/1_-gzlz1lfys2.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/login?next=%2Fsso-api%3Furl%3Dhttps%253A%252F%252Fportofolio-hcld6a139-captainy7s-projects.vercel.app%252F%26nonce%3Df98efee6e1d773310e273e09788ea527c63b9af6344cf69ddba62ce2abccf686:0

@@ -1,0 +1,124 @@
+[     498ms] [LOG] %c
+▲
+
+ _____ _              _                    _   _             __
+|_   _| |__   ___    / \   __ _  ___ _ __ | |_(_) ___       / /
+  | | | '_ \ / _ \  / _ \ / _` |/ _ \ '_ \| __| |/ __|     / /
+  | | | | | |  __/ / ___ \ (_| |  __/ | | | |_| | (__     /_/
+  |_| |_| |_|\___|/_/   \_\__, |\___|_| |_|\__|_|\___|    (_)
+                           |___/
+ ___        __               _                   _                 _
+|_ _|_ __  / _|_ __ __ _ ___| |_ _ __ _   _  ___| |_ _   _ _ __ ___
+ | || '_ \| |_| '__/ _` / __| __| '__| | | |/ __| __| | | | '__/ _ \
+ | || | | |  _| | | (_| \__ \ |_| |  | |_| | (__| |_| |_| | | |  __/
+|___|_| |_|_| |_|  \__,_|___/\__|_|   \__,_|\___|\__|\__,_|_|  \___|
+  
+
+Hello!
+
+- Open Source https://vercel.com/oss
+- Careers https://vercel.com/careers
+- Status https://vercel-status.com
+
+ font-family: "Geist Mono", monospace; white-space: pre; line-height: 1; @ https://vercel.com/_next/static/immutable/chunks/2v4re5sjm46o_.js:108
+[    1310ms] [WARNING] iso_swr: SSR fetch failed for "/v1/dashboard/projects/domains?teamId=dashboard" {error: iso_swr_fetch_error, message: The request is missing an authentication token} @ https://vercel.com/dashboard/domains:558
+[    1477ms] [WARNING] iso_swr: SSR fetch failed for "/api/v2/teams/dashboard" {error: iso_swr_fetch_error, message: The request is missing an authentication token} @ https://vercel.com/dashboard/domains:637
+[    1477ms] [WARNING] iso_swr: SSR fetch failed for "/api/v9/projects/domains?activeBranches=1&latestDeployments=1&rollbackInfo=true&teamId=dashboard" {error: iso_swr_fetch_error, message: The request is missing an authentication token} @ https://vercel.com/dashboard/domains:637
+[    1478ms] [WARNING] iso_swr: SSR fetch failed for "/api/v7/deployments?limit=10&projectId=domains&rollbackCandidate=true&teamId=dashboard" {error: iso_swr_fetch_error, message: The request is missing an authentication token} @ https://vercel.com/dashboard/domains:637
+[    1483ms] [WARNING] iso_swr: SSR fetch failed for "/api/v7/deployments?limit=10&projectId=domains&state=INITIALIZING%2CREADY%2CERROR%2CBUILDING%2CQUEUED%2CBLOCKED&target=preview&teamId=dashboard" {error: iso_swr_fetch_error, message: The request is missing an authentication token} @ https://vercel.com/dashboard/domains:732
+[    1486ms] [WARNING] iso_swr: SSR fetch failed for "/dashboard/projects/domains/production-checklist?teamId=dashboard" {error: iso_swr_fetch_error, message: The request is missing an authentication token} @ https://vercel.com/dashboard/domains:811
+[    2252ms] [WARNING] iso_swr[warn] [client] fallback error for key: "/api/v2/teams/dashboard" {error: iso_swr_fetch_error, message: The request is missing an authentication token} @ https://vercel.com/_next/static/immutable/chunks/17hx4nd1livtv.js:1
+[    2291ms] [WARNING] iso_swr[warn] [client] fallback error for key: "/v1/dashboard/projects/domains?teamId=dashboard" {error: iso_swr_fetch_error, message: The request is missing an authentication token} @ https://vercel.com/_next/static/immutable/chunks/17hx4nd1livtv.js:1
+[    2314ms] [WARNING] iso_swr[warn] [client] fallback error for key: "/api/v9/projects/domains?activeBranches=1&latestDeployments=1&rollbackInfo=true&teamId=dashboard" {error: iso_swr_fetch_error, message: The request is missing an authentication token} @ https://vercel.com/_next/static/immutable/chunks/17hx4nd1livtv.js:1
+[    3259ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://vercel.com/api/jwt:0
+[    3260ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://vercel.com/api/v1/notifications/push:0
+[    3264ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://vercel.com/api/v1/dashboard/projects/domains?teamId=dashboard:0
+[    3264ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://vercel.com/api/v2/teams/dashboard:0
+[    3265ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://vercel.com/api/v9/projects/domains?activeBranches=1&latestDeployments=1&rollbackInfo=true&teamId=dashboard:0
+[    3272ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://vercel.com/api/dashboard/projects/domains/activity?teamId=dashboard:0
+[    3430ms] [LOG] Ignored request error TypeError: Failed to fetch @ https://vercel.com/_next/static/immutable/chunks/1_r3cv1z5erlf.js:1
+[    3433ms] [LOG] Ignored request error CustomFetchError: Unexpected Error
+    at g (https://vercel.com/_next/static/immutable/chunks/2y_j2t412dw61.js:2:3685)
+    at async https://vercel.com/_next/static/immutable/chunks/353pn2eql_869.js:2:10864 @ https://vercel.com/_next/static/immutable/chunks/1_r3cv1z5erlf.js:1
+[    3434ms] [WARNING] [omniagent] chat stream failed TypeError: Failed to fetch
+    at window.fetch (https://vercel.com/dashboard/domains:1:20102)
+    at oS.reconnectToStream (https://vercel.com/_next/static/immutable/chunks/294tz8v-xb7k2.js:38:47891)
+    at async ae.makeRequest (https://vercel.com/_next/static/immutable/chunks/294tz8v-xb7k2.js:23:47520)
+    at async ae.resumeStream (https://vercel.com/_next/static/immutable/chunks/294tz8v-xb7k2.js:23:44598) @ https://vercel.com/_next/static/immutable/chunks/1rox9n41tha_x.js:1
+[    3434ms] [LOG] Ignored request error CustomFetchError: Unexpected Error
+    at g (https://vercel.com/_next/static/immutable/chunks/2y_j2t412dw61.js:2:3685)
+    at async https://vercel.com/_next/static/immutable/chunks/353pn2eql_869.js:2:10864 @ https://vercel.com/_next/static/immutable/chunks/1_r3cv1z5erlf.js:1
+[    3526ms] [ERROR] TypeError: Failed to fetch @ https://vercel.com/_next/static/immutable/chunks/2v4re5sjm46o_.js:31
+[    3528ms] [ERROR] TypeError: Failed to fetch @ https://vercel.com/_next/static/immutable/chunks/2v4re5sjm46o_.js:31
+[    3544ms] [LOG] Ignored request error AbortError: Failed to fetch
+    at window.fetch (https://vercel.com/dashboard/domains:1:20102)
+    at g (https://vercel.com/_next/static/immutable/chunks/2y_j2t412dw61.js:2:2547)
+    at I.name (https://vercel.com/_next/static/immutable/chunks/2y_j2t412dw61.js:2:1646)
+    at name (https://vercel.com/_next/static/immutable/chunks/2y_j2t412dw61.js:2:6595)
+    at new Promise (<anonymous>)
+    at p (https://vercel.com/_next/static/immutable/chunks/2y_j2t412dw61.js:2:6577)
+    at I (https://vercel.com/_next/static/immutable/chunks/2y_j2t412dw61.js:2:1642)
+    at https://vercel.com/_next/static/immutable/chunks/1q5fljlq2gx8u.js:2:6331
+    at https://vercel.com/_next/static/immutable/chunks/353pn2eql_869.js:2:13896
+    at https://vercel.com/_next/static/immutable/chunks/353pn2eql_869.js:2:10834 @ https://vercel.com/_next/static/immutable/chunks/1_r3cv1z5erlf.js:1
+[    3549ms] [LOG] Ignored request error AbortError: Failed to fetch
+    at window.fetch (https://vercel.com/dashboard/domains:1:20102)
+    at g (https://vercel.com/_next/static/immutable/chunks/2y_j2t412dw61.js:2:2547)
+    at I.name (https://vercel.com/_next/static/immutable/chunks/2y_j2t412dw61.js:2:1646)
+    at name (https://vercel.com/_next/static/immutable/chunks/2y_j2t412dw61.js:2:6595)
+    at new Promise (<anonymous>)
+    at p (https://vercel.com/_next/static/immutable/chunks/2y_j2t412dw61.js:2:6577)
+    at I (https://vercel.com/_next/static/immutable/chunks/2y_j2t412dw61.js:2:1642)
+    at revalidateOnFocus (https://vercel.com/_next/static/immutable/chunks/0wghbatva9yxh.js:2:86557)
+    at https://vercel.com/_next/static/immutable/chunks/353pn2eql_869.js:2:13896
+    at https://vercel.com/_next/static/immutable/chunks/353pn2eql_869.js:2:10834 @ https://vercel.com/_next/static/immutable/chunks/1_r3cv1z5erlf.js:1
+[    3552ms] [LOG] Ignored request error TypeError: A network error has occurred. Please check your connection and try again.
+    at C (https://vercel.com/_next/static/immutable/chunks/1d1f3fozf5y0l.js:2:30317)
+    at async revalidateIfStale (https://vercel.com/_next/static/immutable/chunks/09k7iogn8f18u.js:2:97684)
+    at async https://vercel.com/_next/static/immutable/chunks/353pn2eql_869.js:2:10864 @ https://vercel.com/_next/static/immutable/chunks/1_r3cv1z5erlf.js:1
+[    3552ms] [LOG] Ignored request error TypeError: A network error has occurred. Please check your connection and try again.
+    at C (https://vercel.com/_next/static/immutable/chunks/1d1f3fozf5y0l.js:2:30317)
+    at async eb (https://vercel.com/_next/static/immutable/chunks/09k7iogn8f18u.js:3:4841)
+    at async https://vercel.com/_next/static/immutable/chunks/353pn2eql_869.js:2:10864 @ https://vercel.com/_next/static/immutable/chunks/1_r3cv1z5erlf.js:1
+[    3626ms] [ERROR] The script resource is behind a redirect, which is disallowed. @ :0
+[    3656ms] [LOG] %c
+▲
+
+    ____                               _ __
+   / __ \________  ____ _____ ___     (_) /_
+  / / / / ___/ _ \/ __ `/ __ `__ \   / / __/
+ / /_/ / /  /  __/ /_/ / / / / / /  / / /__
+/_____/_/   \___/\__,_/_/ /_/ /_/  /_/\__( )
+   _____ __    _          _ __           |/
+  / ___// /_  (_)___     (_) /_
+  \__ \/ __ \/ / __ \   / / __/
+ ___/ / / / / / /_/ /  / / /_
+/____/_/ /_/_/ .___/  /_/\__/
+            /_/
+  
+
+Hello!
+
+- Open Source https://vercel.com/oss
+- Careers https://vercel.com/careers
+- Status https://vercel-status.com
+
+ font-family: "Geist Mono", monospace; white-space: pre; line-height: 1; @ https://vercel.com/_next/static/immutable/chunks/2v4re5sjm46o_.js:108
+[    4310ms] [WARNING] Deprecated API for given entry type. @ https://vercel.com/_next/static/immutable/chunks/2pior404zc98i.js:18
+[    4333ms] [WARNING] [GSI_LOGGER]: Your client application uses one of the Google One Tap prompt UI status methods that may stop functioning when FedCM becomes mandatory. Refer to the migration guide to update your code accordingly and opt-in to FedCM to test your changes. Learn more: https://developers.google.com/identity/gsi/web/guides/fedcm-migration?s=dc#display_moment and https://developers.google.com/identity/gsi/web/guides/fedcm-migration?s=dc#skipped_moment @ https://vercel.com/_next/static/immutable/chunks/2pior404zc98i.js:16
+[    4340ms] [ERROR] Not signed in with the identity provider. @ https://vercel.com/login?next=%2Fdashboard%2Fdomains:0
+[    4389ms] [ERROR] Failed to load resource: the server responded with a status of 403 () @ https://vercel.com/api/jwt:0
+[    7678ms] [WARNING] The resource https://vercel.com/_next/static/immutable/chunks/3l1vkaiao2o7o.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/login?next=%2Fdashboard%2Fdomains:0
+[    7678ms] [WARNING] The resource https://vercel.com/_next/static/immutable/chunks/1777f8dhtch_9.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/login?next=%2Fdashboard%2Fdomains:0
+[    7678ms] [WARNING] The resource https://vercel.com/_next/static/immutable/chunks/1_-gzlz1lfys2.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/login?next=%2Fdashboard%2Fdomains:0
+[    7678ms] [WARNING] The resource https://vercel.com/_next/static/immutable/chunks/0uj5f3hoqmasw.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/login?next=%2Fdashboard%2Fdomains:0
+[   17944ms] [WARNING] The resource https://vercel.com/_next/static/immutable/chunks/3l1vkaiao2o7o.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/login?next=%2Fdashboard%2Fdomains:0
+[   17944ms] [WARNING] The resource https://vercel.com/_next/static/immutable/chunks/1777f8dhtch_9.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/login?next=%2Fdashboard%2Fdomains:0
+[   17944ms] [WARNING] The resource https://vercel.com/_next/static/immutable/chunks/1_-gzlz1lfys2.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/login?next=%2Fdashboard%2Fdomains:0
+[   17944ms] [WARNING] The resource https://vercel.com/_next/static/immutable/chunks/0uj5f3hoqmasw.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/login?next=%2Fdashboard%2Fdomains:0
+[   18916ms] [ERROR] [GSI_LOGGER]: FedCM get() rejects with NetworkError: Error retrieving a token. @ https://vercel.com/_next/static/immutable/chunks/0zjia2l51bp6x.js:8
+[   19010ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://o205439.ingest.sentry.io/api/1323670/envelope/?sentry_key=d00780d432ac4ccf882f60dd02062e14&sentry_version=7&sentry_client=sentry.javascript.browser%2F7.111.0:0
+[   22060ms] [WARNING] The resource https://vercel.com/_next/static/immutable/chunks/3l1vkaiao2o7o.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/login?next=%2Fdashboard%2Fdomains:0
+[   22060ms] [WARNING] The resource https://vercel.com/_next/static/immutable/chunks/1777f8dhtch_9.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/login?next=%2Fdashboard%2Fdomains:0
+[   22060ms] [WARNING] The resource https://vercel.com/_next/static/immutable/chunks/1_-gzlz1lfys2.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/login?next=%2Fdashboard%2Fdomains:0
+[   22060ms] [WARNING] The resource https://vercel.com/_next/static/immutable/chunks/0uj5f3hoqmasw.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://vercel.com/login?next=%2Fdashboard%2Fdomains:0
