@@ -268,7 +268,7 @@ export const blogPosts: {
   title: string;
   excerpt: string;
   date: string;
-  readTime?: string;
+  readTime: string;
   tags: string[];
   image?: string;
 }[] = [];
