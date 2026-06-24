@@ -304,4 +304,6 @@ export const certificates: {
   name: string;
   issuer: string;
   image: string;
-}[] = [];
+}[] = [
+  { name: "Revou FSSE — Full-Stack Software Engineering", issuer: "Revou", image: "/images/certs/revou-cert.webp" },
+];
