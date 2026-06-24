@@ -3,7 +3,7 @@ export const personalInfo = {
   handle: "satria",
   role: "Full-Stack Developer",
   tagline: "Building digital experiences with code & creativity",
-  bio: "Full-stack developer specializing in modern web applications. Experienced in building production-ready systems with multi-tenant architecture, real-time features, and AI integration.",
+  bio: "Full-stack developer & problem solver who loves building things that make a difference. Tech enthusiast, always curious, always learning — from vanilla JS to AI-powered systems. I turn complex problems into clean, working solutions.",
   avatar: "/images/profile/avatar.webp",
   location: "Indonesia",
   email: "satria@email.com",
