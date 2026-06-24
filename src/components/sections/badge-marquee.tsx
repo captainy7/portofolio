@@ -8,7 +8,6 @@ const colors = [
   "var(--main-green)",
   "var(--main-pink)",
   "var(--main-orange)",
-  "var(--main-blue)",
 ];
 
 export function BadgeMarquee() {
