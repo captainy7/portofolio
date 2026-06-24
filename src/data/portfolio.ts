@@ -9,7 +9,7 @@ export const personalInfo = {
   email: "satria@email.com",
   social: {
     github: "https://github.com/yogaaaa123",
-    linkedin: "https://linkedin.com/in/satria",
+    linkedin: "https://www.linkedin.com/in/satria-yoga-pratama-b99446306",
   },
   resumeUrl: "/resume.pdf",
 };
