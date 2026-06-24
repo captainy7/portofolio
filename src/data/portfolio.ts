@@ -22,7 +22,6 @@ export const stats = [
 ];
 
 export const skillBadges = [
-  "Full-Stack Developer",
   "Next.js",
   "React",
   "TypeScript",
@@ -34,8 +33,6 @@ export const skillBadges = [
   "Docker",
   "Python",
   "AI Integration",
-  "Multi-Tenant SaaS",
-  "JWT Auth",
   "REST API",
 ];
 
