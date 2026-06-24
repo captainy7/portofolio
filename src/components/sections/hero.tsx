@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { Download, ArrowRight } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/ui/social-icons";
@@ -20,9 +21,19 @@ export function Hero() {
           className="mb-5"
         >
           <div className="mx-auto h-24 w-24 overflow-hidden rounded-base border-2 border-border shadow-shadow">
-            <div className="flex h-full w-full items-center justify-center bg-main text-main-foreground text-3xl font-heading font-bold">
-              {personalInfo.name.charAt(0)}
-            </div>
+            {personalInfo.avatar ? (
+              <Image
+                src={personalInfo.avatar}
+                alt={personalInfo.name}
+                width={96}
+                height={96}
+                className="h-full w-full object-cover"
+              />
+            ) : (
+              <div className="flex h-full w-full items-center justify-center bg-main text-main-foreground text-3xl font-heading font-bold">
+                {personalInfo.name.charAt(0)}
+              </div>
+            )}
           </div>
         </motion.div>
 
