@@ -44,6 +44,7 @@ export const metadata: Metadata = {
   publisher: siteName,
   icons: {
     icon: "/favicon1.webp",
+    shortcut: "/favicon1.webp",
   },
   alternates: { canonical: siteUrl },
   openGraph: {
@@ -90,7 +91,6 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="#ffffff" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon1.webp" type="image/webp" />
         <JsonLd />
       </head>
       <body className="min-h-screen bg-background font-sans text-foreground antialiased">
