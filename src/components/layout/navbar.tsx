@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { ThemeToggle } from "@/components/shared/theme-toggle";
@@ -81,10 +82,22 @@ export function Navbar() {
       {/* Desktop sidebar */}
       <aside className="fixed left-0 top-0 z-40 hidden h-screen w-[240px] flex-col border-r-2 bg-sidebar-bg lg:flex">
         <div className="flex items-center gap-3 border-b-2 p-6">
-          <div className="flex h-10 w-10 items-center justify-center rounded-base bg-main text-main-foreground border-2 border-border shadow-shadow">
-            <span className="text-lg font-heading font-bold">
-              {personalInfo.name.charAt(0)}
-            </span>
+          <div className="flex h-10 w-10 items-center justify-center rounded-base border-2 border-border shadow-shadow overflow-hidden">
+            {personalInfo.avatar ? (
+              <Image
+                src={personalInfo.avatar}
+                alt={personalInfo.name}
+                width={40}
+                height={40}
+                className="h-full w-full object-cover"
+              />
+            ) : (
+              <div className="flex h-full w-full items-center justify-center bg-main text-main-foreground">
+                <span className="text-lg font-heading font-bold">
+                  {personalInfo.name.charAt(0)}
+                </span>
+              </div>
+            )}
           </div>
           <div>
             <Link

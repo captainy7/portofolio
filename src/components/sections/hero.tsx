@@ -27,6 +27,7 @@ export function Hero() {
                 alt={personalInfo.name}
                 width={96}
                 height={96}
+                loading="eager"
                 className="h-full w-full object-cover"
               />
             ) : (
