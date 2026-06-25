@@ -34,6 +34,7 @@ export const skillBadges = [
   "Python",
   "AI Integration",
   "REST API",
+  "Linux",
 ];
 
 export const skills = [
@@ -49,6 +50,7 @@ export const skills = [
   { name: "Docker", category: "DevOps", level: 80 },
   { name: "Zustand", category: "State Mgmt", level: 85 },
   { name: "React Query", category: "State Mgmt", level: 82 },
+  { name: "Linux", category: "DevOps", level: 78 },
 ];
 
 export const techStack = [
@@ -64,6 +66,7 @@ export const techStack = [
   { name: "Docker", category: "DevOps", icon: "🐳" },
   { name: "Zod", category: "Validation", icon: "✓" },
   { name: "Recharts", category: "Charts", icon: "📊" },
+  { name: "Linux", category: "DevOps", icon: "🐧" },
 ];
 
 export const experiences: {
