@@ -21,7 +21,7 @@ export function BadgeMarquee() {
           return (
             <span
               key={`${badge}-${i}`}
-              className="inline-flex shrink-0 items-center gap-1.5 rounded-base border-2 border-border px-4 py-1.5 text-sm font-base shadow-shadow font-semibold"
+              className="inline-flex shrink-0 items-center gap-1.5 rounded-base border-2 border-border px-4 py-1.5 text-sm font-medium shadow-shadow font-semibold"
               style={{
                 backgroundColor: color,
                 color: "#fff",

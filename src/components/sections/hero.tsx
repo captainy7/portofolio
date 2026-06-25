@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { Download, ArrowRight } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/ui/social-icons";
@@ -21,16 +22,15 @@ export function Hero() {
         >
           <div className="mx-auto h-24 w-24 overflow-hidden rounded-base border-2 border-border shadow-shadow">
             {personalInfo.avatar ? (
-              <img
+              <Image
                 src={personalInfo.avatar}
                 alt={personalInfo.name}
                 width={96}
                 height={96}
-                loading="eager"
                 className="h-full w-full object-cover"
               />
             ) : (
-              <div className="flex h-full w-full items-center justify-center bg-main text-main-foreground text-3xl font-heading">
+              <div className="flex h-full w-full items-center justify-center bg-main text-main-foreground text-3xl font-bold">
                 {personalInfo.name.charAt(0)}
               </div>
             )}
@@ -42,7 +42,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="mb-1 text-sm text-main font-mono font-base"
+          className="mb-1 text-sm text-main font-mono font-medium"
         >
           @{personalInfo.handle}
         </motion.p>
@@ -52,7 +52,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.15 }}
-          className="mb-2 text-3xl font-heading tracking-tight sm:text-4xl"
+          className="mb-2 text-3xl font-bold tracking-tight sm:text-4xl"
         >
           {personalInfo.name}
         </motion.h1>
@@ -62,7 +62,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="text-lg font-base text-muted-foreground"
+          className="text-lg font-medium text-muted-foreground"
         >
           {personalInfo.role}
         </motion.p>
@@ -72,7 +72,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.25 }}
-          className="mt-4 max-w-lg text-sm font-base leading-relaxed text-muted-foreground"
+          className="mt-4 max-w-lg text-sm font-medium leading-relaxed text-muted-foreground"
         >
           {personalInfo.bio}
         </motion.p>

@@ -40,10 +40,10 @@ export function Stats() {
               transition={{ delay: idx * 0.08 }}
               className="rounded-base border-2 border-border bg-secondary-background p-5 text-center shadow-shadow"
             >
-              <div className="text-3xl font-heading text-main md:text-4xl">
+              <div className="text-3xl font-bold text-main md:text-4xl">
                 <AnimatedCounter {...stat} />
               </div>
-              <p className="mt-1 text-xs font-base text-muted-foreground md:text-sm">
+              <p className="mt-1 text-xs font-medium text-muted-foreground md:text-sm">
                 {stat.label}
               </p>
             </motion.div>

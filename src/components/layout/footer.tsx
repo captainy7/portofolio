@@ -8,7 +8,7 @@ export function Footer() {
   return (
     <footer className="mt-auto border-t-2">
       <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 px-6 py-6 md:flex-row">
-        <p className="text-sm font-base text-muted-foreground">
+        <p className="text-sm font-medium text-muted-foreground">
           &copy; {year} {personalInfo.name}. Built with Next.js.
         </p>
         <div className="flex items-center gap-3">

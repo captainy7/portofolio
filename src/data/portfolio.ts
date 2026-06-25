@@ -17,7 +17,7 @@ export const personalInfo = {
 export const stats = [
   { value: 5, suffix: "", label: "Projects Shipped", decimals: 0 },
   { value: 5, suffix: "", label: "Milestones", decimals: 0 },
-  { value: 4, suffix: "", label: "Tech Stacks", decimals: 0 },
+  { value: 12, suffix: "", label: "Tech Stacks", decimals: 0 },
   { value: 100, suffix: "%", label: "Commitment", decimals: 0 },
 ];
 

@@ -21,10 +21,10 @@ export default function ProjectsClient() {
       <div className="py-16 lg:py-24">
         <div className="mx-auto max-w-5xl px-6">
           <div className="mb-12">
-            <h1 className="text-4xl font-heading tracking-tight sm:text-5xl">
+            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
               Projects
             </h1>
-            <p className="mt-3 font-base text-muted-foreground">
+            <p className="mt-3 font-medium text-muted-foreground">
               Things I&apos;ve built and contributed to.
             </p>
           </div>
@@ -32,7 +32,7 @@ export default function ProjectsClient() {
           <div className="mb-10 flex flex-wrap gap-2">
             <button
               onClick={() => setActiveTag(null)}
-              className={`rounded-base border-2 px-3 py-1.5 text-xs font-base font-semibold transition-all ${
+              className={`rounded-base border-2 px-3 py-1.5 text-xs font-medium font-semibold transition-all ${
                 !activeTag
                   ? "bg-main text-main-foreground border-border shadow-shadow"
                   : "bg-secondary-background text-foreground border-border hover:bg-muted"
@@ -44,7 +44,7 @@ export default function ProjectsClient() {
               <button
                 key={tag}
                 onClick={() => setActiveTag(tag)}
-                className={`rounded-base border-2 px-3 py-1.5 text-xs font-base font-semibold transition-all ${
+                className={`rounded-base border-2 px-3 py-1.5 text-xs font-medium font-semibold transition-all ${
                   activeTag === tag
                     ? "bg-main text-main-foreground border-border shadow-shadow"
                     : "bg-secondary-background text-foreground border-border hover:bg-muted"
@@ -67,7 +67,7 @@ export default function ProjectsClient() {
           </motion.div>
 
           {filtered.length === 0 && (
-            <div className="py-20 text-center font-base text-muted-foreground">
+            <div className="py-20 text-center font-medium text-muted-foreground">
               No projects found with tag &quot;{activeTag}&quot;.
             </div>
           )}

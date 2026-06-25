@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   ExternalLink,
@@ -76,11 +77,11 @@ export function ProjectCard({
                 transition={{ duration: 0.2 }}
                 className="relative h-full w-full"
               >
-                <img
+                <Image
                   src={images[imgIdx]}
                   alt={`${title} - ${imgIdx + 1}`}
-                  loading="eager"
-                  className="h-full w-full object-contain bg-muted p-2"
+                  fill
+                  className="object-contain bg-muted p-2"
                 />
               </motion.div>
             </AnimatePresence>
@@ -126,10 +127,10 @@ export function ProjectCard({
 
         {/* Content — below image */}
         <div className="p-6">
-          <h3 className="mb-2 font-heading hover:text-main transition-colors">
+          <h3 className="mb-2 font-bold hover:text-main transition-colors">
             {title}
           </h3>
-          <p className="mb-4 text-sm font-base leading-relaxed text-muted-foreground line-clamp-3">
+          <p className="mb-4 text-sm font-medium leading-relaxed text-muted-foreground line-clamp-3">
             {description}
           </p>
 
@@ -139,7 +140,7 @@ export function ProjectCard({
               {details.highlights.slice(0, 4).map((h, i) => (
                 <li
                   key={i}
-                  className="flex items-start gap-1.5 text-xs font-base text-muted-foreground"
+                  className="flex items-start gap-1.5 text-xs font-medium text-muted-foreground"
                 >
                   <CheckCircle2 className="mt-0.5 h-3 w-3 shrink-0 text-main" />
                   <span>{h}</span>
@@ -155,7 +156,7 @@ export function ProjectCard({
               </Badge>
             ))}
             {tags.length > 8 && (
-              <span className="text-[10px] font-base text-muted-foreground flex items-center">
+              <span className="text-[10px] font-medium text-muted-foreground flex items-center">
                 +{tags.length - 8}
               </span>
             )}
@@ -167,7 +168,7 @@ export function ProjectCard({
                 href={liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1 text-xs font-base font-semibold text-muted-foreground transition-colors hover:text-main"
+                className="flex items-center gap-1 text-xs font-medium font-semibold text-muted-foreground transition-colors hover:text-main"
               >
                 <ExternalLink className="h-3.5 w-3.5" />
                 Live
@@ -178,7 +179,7 @@ export function ProjectCard({
                 href={githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1 text-xs font-base font-semibold text-muted-foreground transition-colors hover:text-foreground"
+                className="flex items-center gap-1 text-xs font-medium font-semibold text-muted-foreground transition-colors hover:text-foreground"
               >
                 <GithubIcon className="h-3.5 w-3.5" />
                 Source
@@ -187,7 +188,7 @@ export function ProjectCard({
             {details?.highlights && details.highlights.length > 0 && (
               <button
                 onClick={() => setShowDetail(true)}
-                className="ml-auto flex items-center gap-1 text-xs font-base font-semibold text-main transition-colors hover:underline"
+                className="ml-auto flex items-center gap-1 text-xs font-medium font-semibold text-main transition-colors hover:underline"
               >
                 Detail Project
               </button>
@@ -221,8 +222,8 @@ export function ProjectCard({
                 <X className="h-4 w-4" />
               </button>
 
-              <h3 className="mb-4 font-heading text-xl">{title}</h3>
-              <p className="mb-4 text-sm font-base leading-relaxed text-muted-foreground">
+              <h3 className="mb-4 font-bold text-xl">{title}</h3>
+              <p className="mb-4 text-sm font-medium leading-relaxed text-muted-foreground">
                 {description}
               </p>
 
@@ -234,12 +235,12 @@ export function ProjectCard({
                 ))}
               </div>
 
-              <h4 className="mb-2 font-heading text-sm">Highlights</h4>
+              <h4 className="mb-2 font-bold text-sm">Highlights</h4>
               <ul className="space-y-2">
                 {details?.highlights?.map((h, i) => (
                   <li
                     key={i}
-                    className="flex items-start gap-2 text-sm font-base text-muted-foreground"
+                    className="flex items-start gap-2 text-sm font-medium text-muted-foreground"
                   >
                     <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-main" />
                     <span>{h}</span>

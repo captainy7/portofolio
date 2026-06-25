@@ -30,10 +30,10 @@ export default function ContactPage() {
       <div className="py-16 lg:py-24">
         <div className="mx-auto max-w-5xl px-6">
           <div className="mb-12">
-            <h1 className="text-4xl font-heading tracking-tight sm:text-5xl">
+            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
               Get in Touch
             </h1>
-            <p className="mt-3 font-base text-muted-foreground">
+            <p className="mt-3 font-medium text-muted-foreground">
               Have a project, question, or just want to say hi? Drop a message.
             </p>
           </div>
@@ -49,8 +49,8 @@ export default function ContactPage() {
                         <Icon className="h-4 w-4" />
                       </div>
                       <div className="min-w-0">
-                        <p className="text-xs font-base text-muted-foreground">{link.label}</p>
-                        <p className="truncate text-sm font-base font-semibold">{link.value}</p>
+                        <p className="text-xs font-medium text-muted-foreground">{link.label}</p>
+                        <p className="truncate text-sm font-medium font-semibold">{link.value}</p>
                       </div>
                     </div>
                   );

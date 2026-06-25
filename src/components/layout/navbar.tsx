@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { ThemeToggle } from "@/components/shared/theme-toggle";
@@ -34,7 +35,7 @@ export function Navbar() {
     <>
       {/* Mobile header */}
       <header className="sticky top-0 z-50 flex items-center justify-between border-b-2 bg-background px-4 py-3 lg:hidden">
-        <Link href="/" className="font-heading text-lg">
+        <Link href="/" className="font-bold text-lg">
           {personalInfo.name.split(" ")[0]}
           <span className="text-main">.</span>
         </Link>
@@ -56,7 +57,7 @@ export function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="fixed inset-0 top-[61px] z-40 bg-background lg:hidden">
+        <div className="fixed inset-0 top-15.25 z-40 bg-background lg:hidden">
           <nav className="flex flex-col gap-1 p-4 pt-6">
             {navItems.map(({ href, label, icon: Icon }) => (
               <Link
@@ -64,7 +65,7 @@ export function Navbar() {
                 href={href}
                 onClick={() => setMobileOpen(false)}
                 className={cn(
-                  "flex items-center gap-3 rounded-base border-2 px-4 py-3 text-sm font-base transition-all",
+                  "flex items-center gap-3 rounded-base border-2 px-4 py-3 text-sm font-medium transition-all",
                   pathname === href
                     ? "bg-main text-main-foreground border-border shadow-shadow"
                     : "border-transparent text-foreground hover:bg-muted"
@@ -83,7 +84,7 @@ export function Navbar() {
         <div className="flex items-center gap-3 border-b-2 p-6">
           <div className="flex h-10 w-10 items-center justify-center rounded-base border-2 border-border shadow-shadow overflow-hidden">
             {personalInfo.avatar ? (
-              <img
+              <Image
                 src={personalInfo.avatar}
                 alt={personalInfo.name}
                 width={40}
@@ -92,7 +93,7 @@ export function Navbar() {
               />
             ) : (
               <div className="flex h-full w-full items-center justify-center bg-main text-main-foreground">
-                <span className="text-lg font-heading">
+                <span className="text-lg font-bold">
                   {personalInfo.name.charAt(0)}
                 </span>
               </div>
@@ -101,11 +102,11 @@ export function Navbar() {
           <div>
             <Link
               href="/"
-              className="text-sm font-heading leading-tight hover:text-main transition-colors"
+              className="text-sm font-bold leading-tight hover:text-main transition-colors"
             >
               {personalInfo.name}
             </Link>
-            <p className="text-xs text-muted-foreground font-base">
+            <p className="text-xs text-muted-foreground font-medium">
               {personalInfo.role}
             </p>
           </div>
@@ -119,7 +120,7 @@ export function Navbar() {
                 key={href}
                 href={href}
                 className={cn(
-                  "flex items-center gap-3 rounded-base border-2 px-3 py-2.5 text-sm font-base transition-all",
+                  "flex items-center gap-3 rounded-base border-2 px-3 py-2.5 text-sm font-medium transition-all",
                   isActive
                     ? "bg-main text-main-foreground border-border shadow-shadow"
                     : "border-transparent text-foreground hover:bg-muted"

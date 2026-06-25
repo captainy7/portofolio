@@ -21,8 +21,8 @@ export function TechStackGrid() {
   return (
     <section className="py-12" style={{ "--main": "var(--main-orange)" } as React.CSSProperties}>
       <div className="mx-auto max-w-4xl px-6">
-        <h2 className="mb-1 text-2xl font-heading tracking-tight">Tech Stack</h2>
-        <p className="mb-6 text-sm font-base text-muted-foreground">
+        <h2 className="mb-1 text-2xl font-bold tracking-tight">Tech Stack</h2>
+        <p className="mb-6 text-sm font-medium text-muted-foreground">
           Technologies I work with on a daily basis.
         </p>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
@@ -42,7 +42,7 @@ export function TechStackGrid() {
                 }}
               >
                 <div
-                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-base border-2 text-sm font-heading shadow-shadow"
+                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-base border-2 text-sm font-bold shadow-shadow"
                   style={{
                     backgroundColor: color,
                     color: "#fff",
@@ -52,8 +52,8 @@ export function TechStackGrid() {
                   {tech.icon}
                 </div>
                 <div className="min-w-0">
-                  <p className="text-sm font-base font-semibold">{tech.name}</p>
-                  <p className="text-[11px] font-base text-muted-foreground">{tech.category}</p>
+                  <p className="text-sm font-medium font-semibold">{tech.name}</p>
+                  <p className="text-[11px] font-medium text-muted-foreground">{tech.category}</p>
                 </div>
               </motion.div>
             );

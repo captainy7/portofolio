@@ -16,7 +16,7 @@ export function ContactForm() {
   };
 
   const inputClasses =
-    "w-full rounded-base border-2 border-border bg-secondary-background px-4 py-2.5 text-sm font-base placeholder:text-muted-foreground/60 focus:outline-hidden focus:ring-2 focus:ring-black focus:ring-offset-2 transition-all";
+    "w-full rounded-base border-2 border-border bg-secondary-background px-4 py-2.5 text-sm font-medium placeholder:text-muted-foreground/60 focus:outline-hidden focus:ring-2 focus:ring-black focus:ring-offset-2 transition-all";
 
   return (
     <motion.div
@@ -33,8 +33,8 @@ export function ContactForm() {
           <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-base bg-main text-main-foreground border-2 border-border shadow-shadow">
             <Check className="h-6 w-6" />
           </div>
-          <h3 className="mb-2 text-xl font-heading">Message Sent!</h3>
-          <p className="text-sm font-base text-muted-foreground">
+          <h3 className="mb-2 text-xl font-bold">Message Sent!</h3>
+          <p className="text-sm font-medium text-muted-foreground">
             Thanks for reaching out. I&apos;ll get back to you soon.
           </p>
           <Button
@@ -49,26 +49,26 @@ export function ContactForm() {
         <form onSubmit={handleSubmit} className="space-y-5">
           <div className="grid gap-5 sm:grid-cols-2">
             <div>
-              <label htmlFor="name" className="mb-1.5 block text-sm font-base font-semibold">
+              <label htmlFor="name" className="mb-1.5 block text-sm font-medium font-semibold">
                 Name
               </label>
               <input id="name" required className={inputClasses} placeholder="Your name" />
             </div>
             <div>
-              <label htmlFor="email" className="mb-1.5 block text-sm font-base font-semibold">
+              <label htmlFor="email" className="mb-1.5 block text-sm font-medium font-semibold">
                 Email
               </label>
               <input id="email" type="email" required className={inputClasses} placeholder="you@example.com" />
             </div>
           </div>
           <div>
-            <label htmlFor="subject" className="mb-1.5 block text-sm font-base font-semibold">
+            <label htmlFor="subject" className="mb-1.5 block text-sm font-medium font-semibold">
               Subject
             </label>
             <input id="subject" required className={inputClasses} placeholder="What's this about?" />
           </div>
           <div>
-            <label htmlFor="message" className="mb-1.5 block text-sm font-base font-semibold">
+            <label htmlFor="message" className="mb-1.5 block text-sm font-medium font-semibold">
               Message
             </label>
             <textarea id="message" required rows={5} className={`${inputClasses} resize-y min-h-[120px]`} placeholder="Your message..." />

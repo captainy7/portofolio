@@ -60,10 +60,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 <Badge key={tag}>{tag}</Badge>
               ))}
             </div>
-            <h1 className="text-3xl font-heading leading-tight tracking-tight sm:text-4xl lg:text-5xl">
+            <h1 className="text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">
               {post.title}
             </h1>
-            <div className="mt-3 flex items-center gap-4 font-base text-muted-foreground">
+            <div className="mt-3 flex items-center gap-4 font-medium text-muted-foreground">
               <time dateTime={post.date} className="flex items-center gap-1.5">
                 <Calendar className="h-4 w-4" />
                 {post.date}
@@ -75,7 +75,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             </div>
           </header>
 
-          <div className="font-base leading-relaxed">
+          <div className="font-medium leading-relaxed">
             <p className="text-lg text-muted-foreground">{post.excerpt}</p>
             <p className="mt-4">Full content coming soon.</p>
           </div>

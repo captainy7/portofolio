@@ -17,6 +17,7 @@ const eslintConfig = defineConfig([
     rules: {
       // Allow setState in useEffect for hydration guards (next-themes)
       "react-hooks/set-state-in-effect": "off",
+      "@next/next/no-img-element": "off",
     },
   },
 ]);

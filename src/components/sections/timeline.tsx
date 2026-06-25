@@ -7,10 +7,10 @@ export function Timeline() {
   return (
     <section className="py-12">
       <div className="mx-auto max-w-4xl px-6">
-        <h2 className="mb-1 text-2xl font-heading tracking-tight sm:text-2xl">
+        <h2 className="mb-1 text-2xl font-bold tracking-tight sm:text-2xl">
           Experience
         </h2>
-        <p className="mb-6 font-base text-muted-foreground">
+        <p className="mb-6 font-medium text-muted-foreground">
           My professional journey so far.
         </p>
 
@@ -25,22 +25,22 @@ export function Timeline() {
               className="rounded-base border-2 border-border bg-secondary-background p-6 shadow-shadow transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none"
             >
               <div className="mb-1 flex flex-wrap items-baseline justify-between gap-2">
-                <h3 className="font-heading">{exp.role}</h3>
-                <span className="text-xs font-base text-muted-foreground">
+                <h3 className="font-bold">{exp.role}</h3>
+                <span className="text-xs font-medium text-muted-foreground">
                   {exp.period}
                 </span>
               </div>
-              <p className="mb-2 text-sm font-base font-semibold text-main">
+              <p className="mb-2 text-sm font-medium font-semibold text-main">
                 {exp.company}
               </p>
-              <p className="mb-3 text-sm font-base text-muted-foreground">
+              <p className="mb-3 text-sm font-medium text-muted-foreground">
                 {exp.description}
               </p>
               <ul className="space-y-1">
                 {exp.highlights.map((h, i) => (
                   <li
                     key={i}
-                    className="flex items-start gap-2 text-sm font-base text-muted-foreground"
+                    className="flex items-start gap-2 text-sm font-medium text-muted-foreground"
                   >
                     <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-base bg-main" />
                     {h}

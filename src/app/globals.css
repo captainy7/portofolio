@@ -72,18 +72,12 @@
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --font-weight-base: 500;
-  --font-weight-heading: 700;
 }
 
 @layer base {
   body {
-    @apply text-foreground;
-    font-weight: var(--font-weight-base);
+    @apply text-foreground font-medium;
     background: var(--background);
-  }
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: var(--font-weight-heading);
   }
 }
 
