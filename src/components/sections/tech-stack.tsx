@@ -25,7 +25,7 @@ export function TechStackGrid() {
         <p className="mb-6 text-sm font-medium text-muted-foreground">
           Technologies I work with on a daily basis.
         </p>
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4">
           {techStack.map((tech, idx) => {
             const color = categoryColors[tech.category];
             return (
@@ -35,11 +35,7 @@ export function TechStackGrid() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.03 }}
-                className="flex items-center gap-3 rounded-base border-2 p-3.5 shadow-shadow transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none"
-                style={{
-                  backgroundColor: "color-mix(in srgb, " + color + " 15%, var(--secondary-background))",
-                  borderColor: "color-mix(in srgb, " + color + " 40%, var(--border))",
-                }}
+                className="flex items-center gap-3 rounded-base border-2 border-border bg-secondary-background p-3.5 shadow-shadow transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none"
               >
                 <div
                   className="flex h-9 w-9 shrink-0 items-center justify-center rounded-base border-2 text-sm font-bold shadow-shadow"
@@ -52,7 +48,7 @@ export function TechStackGrid() {
                   {tech.icon}
                 </div>
                 <div className="min-w-0">
-                  <p className="text-sm font-medium font-semibold">{tech.name}</p>
+                  <p className="text-sm font-medium leading-tight">{tech.name}</p>
                   <p className="text-[11px] font-medium text-muted-foreground">{tech.category}</p>
                 </div>
               </motion.div>
