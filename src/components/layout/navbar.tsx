@@ -34,7 +34,7 @@ export function Navbar() {
     <>
       {/* Mobile header */}
       <header className="sticky top-0 z-50 flex items-center justify-between border-b-2 bg-background px-4 py-3 lg:hidden">
-        <Link href="/" className="font-heading text-lg font-bold">
+        <Link href="/" className="font-heading text-lg">
           {personalInfo.name.split(" ")[0]}
           <span className="text-main">.</span>
         </Link>

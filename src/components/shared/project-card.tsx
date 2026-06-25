@@ -221,7 +221,7 @@ export function ProjectCard({
                 <X className="h-4 w-4" />
               </button>
 
-              <h3 className="mb-4 font-heading text-xl font-bold">{title}</h3>
+              <h3 className="mb-4 font-heading text-xl">{title}</h3>
               <p className="mb-4 text-sm font-base leading-relaxed text-muted-foreground">
                 {description}
               </p>
