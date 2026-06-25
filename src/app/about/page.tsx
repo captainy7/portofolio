@@ -8,10 +8,10 @@ import { Download } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "Learn more about Satria Yoga Pratama — full-stack developer with 5+ years experience in React, Next.js, TypeScript, and Node.js.",
+  description: "Learn more about Satria Yoga Pratama — software engineer passionate about building modern web applications, from frontend to backend.",
   openGraph: {
     title: "About | Satria Yoga Pratama",
-    description: "Full-stack developer with 5+ years experience.",
+    description: "Software engineer passionate about building modern web applications.",
   },
 };
 
@@ -52,8 +52,8 @@ export default function AboutPage() {
                       <dd className="text-sm font-semibold break-all">{personalInfo.email}</dd>
                     </div>
                     <div className="flex justify-between">
-                      <dt className="text-muted-foreground">Experience</dt>
-                      <dd className="font-semibold">5+ Years</dd>
+                      <dt className="text-muted-foreground">Projects</dt>
+                      <dd className="font-semibold">5 Shipped</dd>
                     </div>
                   </dl>
                 </div>
