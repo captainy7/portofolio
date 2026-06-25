@@ -47,9 +47,9 @@ export default function AboutPage() {
                       <dt className="text-muted-foreground">Location</dt>
                       <dd className="font-semibold">{personalInfo.location}</dd>
                     </div>
-                    <div className="flex justify-between">
-                      <dt className="text-muted-foreground">Email</dt>
-                      <dd className="font-semibold">{personalInfo.email}</dd>
+                    <div className="flex flex-col gap-1">
+                      <dt className="text-xs text-muted-foreground">Email</dt>
+                      <dd className="text-sm font-semibold break-all">{personalInfo.email}</dd>
                     </div>
                     <div className="flex justify-between">
                       <dt className="text-muted-foreground">Experience</dt>
