@@ -32,7 +32,7 @@ export function TechStackGrid() {
         <p className="mb-6 text-sm font-base text-muted-foreground">
           Technologies I work with on a daily basis.
         </p>
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4">
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
           {techStack.map((tech, idx) => {
             const color = categoryColors[tech.category] || colorList[idx % colorList.length];
             return (
