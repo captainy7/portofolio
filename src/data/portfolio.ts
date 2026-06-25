@@ -6,7 +6,7 @@ export const personalInfo = {
   bio: "Software engineer & problem solver who loves building things that make a difference. Tech enthusiast, always curious, always learning — turning complex problems into clean, working solutions.",
   avatar: "/images/profile/avatar.webp",
   location: "Indonesia",
-  email: "satria@email.com",
+  email: "satriayogapratama255@gmail.com",
   social: {
     github: "https://github.com/yogaaaa123",
     linkedin: "https://www.linkedin.com/in/satria-yoga-pratama-b99446306",
