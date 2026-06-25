@@ -8,21 +8,14 @@ const categoryColors: Record<string, string> = {
   Language: "var(--main-purple)",
   Backend: "var(--main-orange)",
   AI: "var(--main-green)",
-  Database: "var(--main-orange)",
-  ORM: "var(--main-purple)",
-  Styling: "var(--main)",
-  DevOps: "var(--main-green)",
-  Validation: "var(--main-purple)",
-  Charts: "var(--main-orange)",
-  "State Mgmt": "var(--main)",
+  Database: "oklch(55% 0.15 260)",
+  ORM: "oklch(60% 0.12 200)",
+  Styling: "oklch(65% 0.14 320)",
+  DevOps: "oklch(58% 0.16 30)",
+  Validation: "oklch(62% 0.13 170)",
+  Charts: "oklch(55% 0.18 350)",
+  "State Mgmt": "oklch(60% 0.1 80)",
 };
-
-const colorList = [
-  "var(--main)",
-  "var(--main-purple)",
-  "var(--main-green)",
-  "var(--main-orange)",
-];
 
 export function TechStackGrid() {
   return (
@@ -34,7 +27,7 @@ export function TechStackGrid() {
         </p>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
           {techStack.map((tech, idx) => {
-            const color = categoryColors[tech.category] || colorList[idx % colorList.length];
+            const color = categoryColors[tech.category];
             return (
               <motion.div
                 key={tech.name}
