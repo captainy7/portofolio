@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { certificates } from "@/data/portfolio";
 import { Award } from "lucide-react";
 
@@ -27,11 +26,10 @@ export function Certificates() {
               className="group rounded-base border-2 border-border bg-secondary-background p-4 shadow-shadow transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none"
             >
               <div className="relative mb-3 aspect-[1.4/1] w-full overflow-hidden rounded-base border-2 border-border bg-muted">
-                <Image
+                <img
                   src={cert.image}
                   alt={cert.name}
-                  fill
-                  className="object-contain p-2"
+                  className="h-full w-full object-contain p-2"
                 />
               </div>
               <div className="flex items-center gap-3">

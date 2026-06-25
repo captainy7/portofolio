@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 import { Download, ArrowRight } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/ui/social-icons";
@@ -22,7 +21,7 @@ export function Hero() {
         >
           <div className="mx-auto h-24 w-24 overflow-hidden rounded-base border-2 border-border shadow-shadow">
             {personalInfo.avatar ? (
-              <Image
+              <img
                 src={personalInfo.avatar}
                 alt={personalInfo.name}
                 width={96}

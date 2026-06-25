@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { ThemeToggle } from "@/components/shared/theme-toggle";
@@ -84,7 +83,7 @@ export function Navbar() {
         <div className="flex items-center gap-3 border-b-2 p-6">
           <div className="flex h-10 w-10 items-center justify-center rounded-base border-2 border-border shadow-shadow overflow-hidden">
             {personalInfo.avatar ? (
-              <Image
+              <img
                 src={personalInfo.avatar}
                 alt={personalInfo.name}
                 width={40}

@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   ExternalLink,
@@ -77,11 +76,10 @@ export function ProjectCard({
                 transition={{ duration: 0.2 }}
                 className="relative h-full w-full"
               >
-                <Image
+                <img
                   src={images[imgIdx]}
                   alt={`${title} - ${imgIdx + 1}`}
-                  fill
-                  className="object-contain bg-muted p-2"
+                  className="h-full w-full object-contain bg-muted p-2"
                 />
               </motion.div>
             </AnimatePresence>
