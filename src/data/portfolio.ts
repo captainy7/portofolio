@@ -1,9 +1,9 @@
 export const personalInfo = {
   name: "Satria Yoga Pratama",
   handle: "satria",
-  role: "Full-Stack Developer",
+  role: "Software Engineer",
   tagline: "Building digital experiences with code & creativity",
-  bio: "Full-stack developer & problem solver who loves building things that make a difference. Tech enthusiast, always curious, always learning — from vanilla JS to AI-powered systems. I turn complex problems into clean, working solutions.",
+  bio: "Software engineer & problem solver who loves building things that make a difference. Tech enthusiast, always curious, always learning — turning complex problems into clean, working solutions.",
   avatar: "/images/profile/avatar.webp",
   location: "Indonesia",
   email: "satria@email.com",
