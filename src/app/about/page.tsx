@@ -21,7 +21,7 @@ export default function AboutPage() {
       <div className="py-16 lg:py-24">
         <section className="mx-auto max-w-4xl px-6">
           <div className="mb-16">
-            <h1 className="text-4xl font-heading font-bold tracking-tight sm:text-5xl">
+            <h1 className="text-4xl font-heading tracking-tight sm:text-5xl">
               About Me
             </h1>
             <div className="mt-6 grid gap-8 md:grid-cols-3">
@@ -39,7 +39,7 @@ export default function AboutPage() {
               </div>
               <div className="flex flex-col gap-4">
                 <div className="rounded-base border-2 border-border bg-secondary-background p-5 shadow-shadow">
-                  <h2 className="mb-3 text-sm font-heading font-bold uppercase tracking-wider text-muted-foreground">
+                  <h2 className="mb-3 text-sm font-heading uppercase tracking-wider text-muted-foreground">
                     Quick Facts
                   </h2>
                   <dl className="space-y-2 text-sm font-base">
@@ -64,7 +64,7 @@ export default function AboutPage() {
 
         <section className="mx-auto max-w-4xl px-6">
           <div className="mb-16 rounded-base border-2 border-border bg-secondary-background p-8 text-center shadow-shadow">
-            <h2 className="mb-2 text-2xl font-heading font-bold">Want to know more?</h2>
+            <h2 className="mb-2 text-2xl font-heading">Want to know more?</h2>
             <p className="mb-6 font-base text-muted-foreground">
               Download my resume for the full story.
             </p>

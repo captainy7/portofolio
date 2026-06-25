@@ -46,7 +46,7 @@ export default async function NotebookPostPage({ params }: NotebookPageProps) {
                 <Badge key={tag}>{tag}</Badge>
               ))}
             </div>
-            <h1 className="text-3xl font-heading font-bold leading-tight tracking-tight sm:text-4xl">
+            <h1 className="text-3xl font-heading leading-tight tracking-tight sm:text-4xl">
               {post.title}
             </h1>
             <p className="mt-3 font-base text-muted-foreground">{post.excerpt}</p>

@@ -126,7 +126,7 @@ export function ProjectCard({
 
         {/* Content — below image */}
         <div className="p-6">
-          <h3 className="mb-2 font-heading font-bold hover:text-main transition-colors">
+          <h3 className="mb-2 font-heading hover:text-main transition-colors">
             {title}
           </h3>
           <p className="mb-4 text-sm font-base leading-relaxed text-muted-foreground line-clamp-3">
@@ -234,7 +234,7 @@ export function ProjectCard({
                 ))}
               </div>
 
-              <h4 className="mb-2 font-heading font-bold text-sm">Highlights</h4>
+              <h4 className="mb-2 font-heading text-sm">Highlights</h4>
               <ul className="space-y-2">
                 {details?.highlights?.map((h, i) => (
                   <li

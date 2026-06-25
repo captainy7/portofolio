@@ -92,7 +92,7 @@ export function Navbar() {
               />
             ) : (
               <div className="flex h-full w-full items-center justify-center bg-main text-main-foreground">
-                <span className="text-lg font-heading font-bold">
+                <span className="text-lg font-heading">
                   {personalInfo.name.charAt(0)}
                 </span>
               </div>
@@ -101,7 +101,7 @@ export function Navbar() {
           <div>
             <Link
               href="/"
-              className="text-sm font-heading font-bold leading-tight hover:text-main transition-colors"
+              className="text-sm font-heading leading-tight hover:text-main transition-colors"
             >
               {personalInfo.name}
             </Link>

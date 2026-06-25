@@ -30,7 +30,7 @@ export default function ContactPage() {
       <div className="py-16 lg:py-24">
         <div className="mx-auto max-w-5xl px-6">
           <div className="mb-12">
-            <h1 className="text-4xl font-heading font-bold tracking-tight sm:text-5xl">
+            <h1 className="text-4xl font-heading tracking-tight sm:text-5xl">
               Get in Touch
             </h1>
             <p className="mt-3 font-base text-muted-foreground">

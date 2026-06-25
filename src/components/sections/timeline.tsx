@@ -7,7 +7,7 @@ export function Timeline() {
   return (
     <section className="py-12">
       <div className="mx-auto max-w-4xl px-6">
-        <h2 className="mb-1 text-2xl font-heading font-bold tracking-tight sm:text-2xl">
+        <h2 className="mb-1 text-2xl font-heading tracking-tight sm:text-2xl">
           Experience
         </h2>
         <p className="mb-6 font-base text-muted-foreground">
@@ -25,7 +25,7 @@ export function Timeline() {
               className="rounded-base border-2 border-border bg-secondary-background p-6 shadow-shadow transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none"
             >
               <div className="mb-1 flex flex-wrap items-baseline justify-between gap-2">
-                <h3 className="font-heading font-bold">{exp.role}</h3>
+                <h3 className="font-heading">{exp.role}</h3>
                 <span className="text-xs font-base text-muted-foreground">
                   {exp.period}
                 </span>

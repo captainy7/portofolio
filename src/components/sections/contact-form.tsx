@@ -33,7 +33,7 @@ export function ContactForm() {
           <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-base bg-main text-main-foreground border-2 border-border shadow-shadow">
             <Check className="h-6 w-6" />
           </div>
-          <h3 className="mb-2 text-xl font-heading font-bold">Message Sent!</h3>
+          <h3 className="mb-2 text-xl font-heading">Message Sent!</h3>
           <p className="text-sm font-base text-muted-foreground">
             Thanks for reaching out. I&apos;ll get back to you soon.
           </p>

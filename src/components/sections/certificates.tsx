@@ -8,7 +8,7 @@ export function Certificates() {
   return (
     <section className="py-12" style={{ "--main": "var(--main-purple)" } as React.CSSProperties}>
       <div className="mx-auto max-w-4xl px-6">
-        <h2 className="mb-1 text-2xl font-heading font-bold tracking-tight">Certificates</h2>
+        <h2 className="mb-1 text-2xl font-heading tracking-tight">Certificates</h2>
         <p className="mb-6 text-sm font-base text-muted-foreground">
           Professional certifications I&apos;ve earned.
         </p>

@@ -30,7 +30,7 @@ export function Hero() {
                 className="h-full w-full object-cover"
               />
             ) : (
-              <div className="flex h-full w-full items-center justify-center bg-main text-main-foreground text-3xl font-heading font-bold">
+              <div className="flex h-full w-full items-center justify-center bg-main text-main-foreground text-3xl font-heading">
                 {personalInfo.name.charAt(0)}
               </div>
             )}
@@ -52,7 +52,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.15 }}
-          className="mb-2 text-3xl font-heading font-bold tracking-tight sm:text-4xl"
+          className="mb-2 text-3xl font-heading tracking-tight sm:text-4xl"
         >
           {personalInfo.name}
         </motion.h1>

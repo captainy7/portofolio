@@ -14,7 +14,7 @@ export function ProjectsSlim() {
       <div className="mx-auto max-w-4xl px-6">
         <div className="mb-6 flex items-end justify-between">
           <div>
-            <h2 className="text-2xl font-heading font-bold tracking-tight">Projects</h2>
+            <h2 className="text-2xl font-heading tracking-tight">Projects</h2>
             <p className="mt-1 text-sm font-base text-muted-foreground">
               Some things I&apos;ve built.
             </p>
@@ -44,7 +44,7 @@ export function ProjectsSlim() {
                 className="group flex items-start justify-between gap-4 rounded-base border-2 border-border bg-secondary-background p-5 shadow-shadow transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none"
               >
                 <div className="min-w-0">
-                  <h3 className="font-heading font-bold group-hover:text-main transition-colors">
+                  <h3 className="font-heading group-hover:text-main transition-colors">
                     {project.title}
                   </h3>
                   <p className="mt-1 text-sm font-base text-muted-foreground line-clamp-1">

@@ -60,7 +60,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 <Badge key={tag}>{tag}</Badge>
               ))}
             </div>
-            <h1 className="text-3xl font-heading font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">
+            <h1 className="text-3xl font-heading leading-tight tracking-tight sm:text-4xl lg:text-5xl">
               {post.title}
             </h1>
             <div className="mt-3 flex items-center gap-4 font-base text-muted-foreground">

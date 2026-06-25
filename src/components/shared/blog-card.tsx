@@ -44,7 +44,7 @@ export function BlogCard({
             </span>
           </div>
 
-          <h2 className="mb-2 font-heading font-bold group-hover:text-main transition-colors">
+          <h2 className="mb-2 font-heading group-hover:text-main transition-colors">
             {title}
           </h2>
           <p className="mb-4 text-sm font-base leading-relaxed text-muted-foreground line-clamp-2">

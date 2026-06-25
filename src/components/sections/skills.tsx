@@ -18,7 +18,7 @@ export function Skills() {
   return (
     <section className="py-12">
       <div className="mx-auto max-w-4xl px-6">
-        <h2 className="mb-1 text-2xl font-heading font-bold tracking-tight sm:text-2xl">
+        <h2 className="mb-1 text-2xl font-heading tracking-tight sm:text-2xl">
           Skills
         </h2>
         <p className="mb-6 font-base text-muted-foreground">
@@ -34,7 +34,7 @@ export function Skills() {
               viewport={{ once: true }}
               transition={{ delay: catIdx * 0.1 }}
             >
-              <h3 className="mb-2 text-xs font-heading font-bold uppercase tracking-wider text-muted-foreground">
+              <h3 className="mb-2 text-xs font-heading uppercase tracking-wider text-muted-foreground">
                 {category}
               </h3>
               <div className="flex flex-wrap gap-2">
