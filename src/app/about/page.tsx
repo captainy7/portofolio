@@ -27,14 +27,7 @@ export default function AboutPage() {
             <div className="mt-6 grid gap-8 md:grid-cols-3">
               <div className="md:col-span-2">
                 <p className="text-lg font-medium leading-relaxed text-muted-foreground">
-                  {personalInfo.bio}
-                </p>
-                <p className="mt-4 text-lg font-medium leading-relaxed text-muted-foreground">
-                  I believe in writing clean, maintainable code and building
-                  products that make a real difference. When I&apos;m not
-                  coding, you&apos;ll find me exploring new technologies,
-                  contributing to open-source, or sharing knowledge through
-                  blog posts.
+                  {personalInfo.heroBio}
                 </p>
               </div>
               <div className="flex flex-col gap-4">
