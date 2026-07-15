@@ -10,7 +10,6 @@ import {
   User,
   Briefcase,
   BookOpen,
-  PenLine,
   Mail,
   Menu,
   X,
@@ -22,7 +21,6 @@ const navItems = [
   { href: "/about", label: "About", icon: User },
   { href: "/projects", label: "Projects", icon: Briefcase },
   { href: "/notebooks", label: "Notebooks", icon: BookOpen },
-  { href: "/blog", label: "Blog", icon: PenLine },
   { href: "/contact", label: "Contact", icon: Mail },
 ];
 
