@@ -14,7 +14,7 @@ export function JsonLd() {
       personalInfo.social.linkedin,
     ],
     jobTitle: personalInfo.role,
-    description: personalInfo.bio,
+    description: personalInfo.heroBio,
     email: personalInfo.email,
     address: {
       "@type": "PostalAddress",

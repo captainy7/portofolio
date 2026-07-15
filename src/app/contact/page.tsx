@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 const contactLinks = [
   { icon: Mail, label: "Email", value: personalInfo.email, href: `mailto:${personalInfo.email}` },
   { icon: MapPin, label: "Location", value: personalInfo.location },
-  { icon: GithubIcon, label: "GitHub", value: "@yogaaaa123", href: personalInfo.social.github },
+  { icon: GithubIcon, label: "GitHub", value: "@captainy7", href: personalInfo.social.github },
   { icon: LinkedinIcon, label: "LinkedIn", value: "Connect with me", href: personalInfo.social.linkedin },
 
   { icon: Download, label: "Resume", value: "Download PDF", href: personalInfo.resumeUrl },

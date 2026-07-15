@@ -8,7 +8,7 @@ export const personalInfo = {
   location: "Indonesia",
   email: "satriayogapratama255@gmail.com",
   social: {
-    github: "https://github.com/yogaaaa123",
+    github: "https://github.com/captainy7",
     linkedin: "https://www.linkedin.com/in/satria-yoga-pratama-b99446306",
   },
   resumeUrl: "/resume.pdf",
