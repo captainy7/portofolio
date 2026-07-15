@@ -46,7 +46,6 @@ export function Skills() {
                       className="inline-flex items-center gap-2 rounded-base border-2 border-border bg-secondary-background px-3 py-1.5 text-sm font-medium shadow-shadow"
                     >
                       {skill.name}
-                      <span className="text-xs text-muted-foreground">{skill.level}%</span>
                     </span>
                   ))}
               </div>

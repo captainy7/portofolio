@@ -1,5 +1,5 @@
 # Build Memory: Portfolio Website
-**Status:** Complete
+**Status:** Complete — Active Maintenance
 
 ## Tech Stack
 | Layer | Tech | Version |
@@ -7,69 +7,64 @@
 | Framework | Next.js | 16.2.9 |
 | Runtime | React | 19.2.4 |
 | Styling | Tailwind CSS | v4 |
-| UI Library | shadcn/ui | custom components |
+| UI Library | shadcn/ui (Radix + custom) | custom |
 | Animation | framer-motion | latest |
 | Theme | next-themes | latest |
 | Icons | lucide-react | latest |
 | Language | TypeScript | ^5 |
 
-## Files Created/Modified
-| File | Purpose |
-|------|---------|
-| `src/data/portfolio.ts` | All portfolio content data (updated with real projects) |
-| `src/components/shared/project-card.tsx` | Image carousel + Detail Project modal |
-| `src/components/sections/projects-slim.tsx` | Fallback ke githubUrl kalo liveUrl kosong |
-| `src/components/layout/footer.tsx` | Hapus Twitter link |
-| `src/components/sections/hero.tsx` | Hapus Twitter link |
-| `src/app/contact/page.tsx` | Hapus Twitter link |
-| `src/app/layout.tsx` | Add `data-scroll-behavior="smooth"` |
-| `public/images/projects/` | Folder gambar project (fe-1, fe-2, admin, staff, toko-online) |
+## Project Data (`src/data/portfolio.ts`)
+| Field | Detail |
+|-------|--------|
+| Name | Satria Yoga Pratama |
+| Role | Software Engineer |
+| Email | satriayogapratama255@gmail.com |
+| GitHub | yogaaaa123 |
+| LinkedIn | satria-yoga-pratama-b99446306 |
+| Bio | Problem solver, tech enthusiast, always learning |
+
+## Projects
+| # | Project | Stack | Featured |
+|---|---------|-------|----------|
+| 1 | CrackPOS Frontend | Next.js 16, React 19, Zustand, React Query | ✅ |
+| 2 | CrackPOS Backend | NestJS, Prisma, PostgreSQL, Python AI | ✅ |
+| 3 | RevoBank API (Ms4) | NestJS, Prisma, JWT, Idempotency | ✅ |
+| 4 | Toko Online (Ms3) | Next.js 16, shadcn/ui, jose, Recharts | ✅ |
+| 5 | RevoFun Games (Ms2) | Vanilla HTML/CSS/JS | ❌ |
+
+## Pages / Routes
+| Route | Content | Status |
+|-------|---------|--------|
+| `/` | Hero + Stats + TechStack + ProjectsSlim + Certificates | ✅ |
+| `/about` | Bio + Skills + Quick Facts + Timeline | ✅ |
+| `/projects` | Project grid with carousel + tag filter + detail modal | ✅ |
+| `/notebooks` | Learning notes listing | ✅ |
+| `/notebooks/[slug]` | Individual notebook page | ✅ |
+| `/contact` | Contact form (simulated) + social links | ✅ |
 
 ## Features
-| Feature | Route | Status |
-|---------|-------|--------|
-| Hero landing | `/` | ✅ |
-| About + Skills + Timeline | `/about` | ✅ |
-| Projects with filter + carousel | `/projects` | ✅ |
-| Project Detail modal | `/projects` (via button) | ✅ |
-| Blog listing + post | `/blog`, `/blog/[slug]` | ✅ |
-| Contact form | `/contact` | ✅ |
-| Dark/light/system theme | global | ✅ |
-| Responsive sidebar layout | global | ✅ |
-| Scroll animations | global | ✅ |
+- ✅ Dark/light/system theme toggle
+- ✅ Responsive sidebar layout
+- ✅ Scroll animations (framer-motion)
+- ✅ Image carousel on project cards
+- ✅ Detail Project modal
+- ✅ Colorful badge marquee (hero)
+- ✅ Colorful tech stack grid
+- ✅ Certificate images display
+- ✅ Resume PDF download
+- ✅ SEO metadata + JSON-LD + Sitemap
 
-## Projects (portfolio.ts)
-| # | Title | Stack | Status |
-|---|-------|-------|--------|
-| 1 | CrackPOS Frontend | Next.js 16 + React 19 + Tailwind v4 + Zustand | ✅ |
-| 2 | CrackPOS Backend | NestJS + Prisma + PostgreSQL + Python AI | ✅ |
-| 3 | RevoBank API (Ms4) | NestJS + Prisma + JWT + Rate Limiting | ✅ |
-| 4 | Toko Online E-Commerce (Ms3) | Next.js 16 + shadcn/ui + jose + Recharts | ✅ |
-| 5 | RevoFun Mini Games (Ms2) | Vanilla HTML/CSS/JS | ✅ |
-
-## Dependencies
-| Package | Purpose |
-|---------|---------|
-| next-themes | Theme switching |
-| framer-motion | Animations |
-| lucide-react | Icons |
-| class-variance-authority | Component variants |
-| clsx + tailwind-merge | cn() utility |
-| @radix-ui/react-slot | Slot primitive |
-
-## Images
+## Images (`public/images/`)
 | Folder | Contents |
 |--------|----------|
-| `public/images/projects/` | fe-1.webp, fe-2.webp, admin.webp, staff.webp, toko-online-1/2/3.png |
-| `public/images/profile/` | (kosong — taruh foto profil) |
-| `public/images/blog/` | (kosong) |
-| `public/images/certs/` | (kosong) |
-| `public/images/misc/` | (kosong) |
+| `projects/` | fe-1.webp, fe-2.webp, admin.webp, staff.webp, toko-online-1/2/3.webp |
+| `profile/` | avatar.webp |
+| `certs/` | revou-cert.webp, cert2.webp |
 
 ## Notes
-- `projects-slim.tsx` now falls back to `githubUrl` if `liveUrl` is empty
-- ProjectCard supports `images[]` array for carousel, with `sizes` prop on `<Image fill>`
-- Added `data-scroll-behavior="smooth"` to `<html>` in layout.tsx
-- Twitter removed from social links (not used)
-- All dummy data (experiences, blogPosts, certificates) replaced with empty typed arrays
+- `<img>` used instead of `<Image />` to avoid Vercel optimization charges
+- All images in WebP format for performance
+- `font-weight` classes: `font-medium` (base), `font-bold` (headings) — no custom weights
+- Blog section removed (redundant with Notebooks)
+- Dummy experiences/certificates/blogPosts removed
 - Build output: 0 errors, 0 warnings
