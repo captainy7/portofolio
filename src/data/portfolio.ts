@@ -12,6 +12,7 @@ export const personalInfo = {
     linkedin: "https://www.linkedin.com/in/satria-yoga-pratama-b99446306",
   },
   resumeUrl: "/resume.pdf",
+  heroBio: "I am a Software Engineer with a background in the manufacturing industry, bringing a strong discipline for quality standards, operational efficiency, and meticulous attention to detail. I successfully transitioned into tech through RevoU's intensive Full Stack Software Engineering program. I specialize in building reliable web applications using the JavaScript and TypeScript ecosystem, including React, Next.js, Node.js, NestJS, and PostgreSQL. I am proficient in managing the full development lifecycle, from architectural design to Docker containerization. I am eager to leverage my unique blend of industrial discipline and technical expertise to build impactful digital solutions within a dynamic engineering team.",
 };
 
 export const stats = [
@@ -303,8 +304,9 @@ export const notebooks = [
 export const certificates: {
   name: string;
   issuer: string;
+  year: number;
   image: string;
 }[] = [
-  { name: "Revou FSSE — Full-Stack Software Engineering", issuer: "Revou", image: "/images/certs/revou-cert.webp" },
-  { name: "Dicoding — Financial Literacy", issuer: "Dicoding", image: "/images/certs/cert2.webp" },
+  { name: "Revou FSSE — Full-Stack Software Engineering", issuer: "Revou", year: 2026, image: "/images/certs/revou-cert.webp" },
+  { name: "Dicoding — Financial Literacy", issuer: "Dicoding", year: 2026, image: "/images/certs/cert2.webp" },
 ];

@@ -1,6 +1,21 @@
 "use client";
 
 import { motion } from "framer-motion";
+import {
+  NextjsIcon,
+  ReactIcon,
+  TypescriptIcon,
+  NestjsIcon,
+  NodejsIcon,
+  PostgresqlIcon,
+  PrismaIcon,
+  TailwindIcon,
+  DockerIcon,
+  PythonIcon,
+  AIIcon,
+  ApiIcon,
+  LinuxIcon,
+} from "@/components/ui/tech-icons";
 import { techStack } from "@/data/portfolio";
 
 const categoryColors: Record<string, string> = {
@@ -17,6 +32,20 @@ const categoryColors: Record<string, string> = {
   "State Mgmt": "oklch(60% 0.1 80)",
 };
 
+const techIcons: Record<string, (size?: number) => React.ReactNode> = {
+  "Next.js 16": (s) => <NextjsIcon size={s} />,
+  "React 19": (s) => <ReactIcon size={s} />,
+  TypeScript: (s) => <TypescriptIcon size={s} />,
+  NestJS: (s) => <NestjsIcon size={s} />,
+  "Node.js": (s) => <NodejsIcon size={s} />,
+  Python: (s) => <PythonIcon size={s} />,
+  PostgreSQL: (s) => <PostgresqlIcon size={s} />,
+  Prisma: (s) => <PrismaIcon size={s} />,
+  "Tailwind CSS": (s) => <TailwindIcon size={s} />,
+  Docker: (s) => <DockerIcon size={s} />,
+  Linux: (s) => <LinuxIcon size={s} />,
+};
+
 export function TechStackGrid() {
   return (
     <section className="py-12" style={{ "--main": "var(--main-orange)" } as React.CSSProperties}>
@@ -28,6 +57,7 @@ export function TechStackGrid() {
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4">
           {techStack.map((tech, idx) => {
             const color = categoryColors[tech.category];
+            const icon = techIcons[tech.name];
             return (
               <motion.div
                 key={tech.name}
@@ -38,14 +68,14 @@ export function TechStackGrid() {
                 className="flex items-center gap-3 rounded-base border-2 border-border bg-secondary-background p-3.5 shadow-shadow transition-all hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none"
               >
                 <div
-                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-base border-2 text-sm font-bold shadow-shadow"
+                  className="flex h-9 w-9 shrink-0 items-center justify-center rounded-base border-2 shadow-shadow"
                   style={{
                     backgroundColor: color,
                     color: "#fff",
                     borderColor: "color-mix(in srgb, " + color + " 80%, black)",
                   }}
                 >
-                  {tech.icon}
+                  {icon ? icon(18) : <NextjsIcon size={18} />}
                 </div>
                 <div className="min-w-0">
                   <p className="text-sm font-medium leading-tight">{tech.name}</p>

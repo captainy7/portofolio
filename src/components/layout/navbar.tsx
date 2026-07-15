@@ -79,7 +79,7 @@ export function Navbar() {
       {/* Desktop sidebar */}
       <aside className="fixed left-0 top-0 z-40 hidden h-screen w-[240px] flex-col border-r-2 bg-sidebar-bg lg:flex">
         <div className="flex items-center gap-3 border-b-2 p-6">
-          <div className="flex h-10 w-10 items-center justify-center rounded-base border-2 border-border shadow-shadow overflow-hidden">
+          <div className="flex h-12 w-12 items-center justify-center rounded-base border-2 border-border shadow-shadow overflow-hidden">
             {personalInfo.avatar ? (
               <img
                 src={personalInfo.avatar}

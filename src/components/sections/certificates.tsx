@@ -37,8 +37,8 @@ export function Certificates() {
                   <Award className="h-5 w-5" />
                 </div>
                 <div className="min-w-0">
-                  <p className="text-sm font-medium font-semibold leading-tight">{cert.name}</p>
-                  <p className="mt-0.5 text-xs font-medium text-muted-foreground">{cert.issuer}</p>
+                  <p className="text-sm font-semibold leading-tight">{cert.name}</p>
+                  <p className="text-xs font-medium text-muted-foreground">{cert.issuer} &middot; {cert.year}</p>
                 </div>
               </div>
             </motion.a>

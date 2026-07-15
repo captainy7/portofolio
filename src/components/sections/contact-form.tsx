@@ -6,13 +6,29 @@ import { Button } from "@/components/ui/button";
 import { Send, Check, Loader2 } from "lucide-react";
 
 export function ContactForm() {
-  const [state, setState] = useState<"idle" | "sending" | "sent">("idle");
+  const [state, setState] = useState<"idle" | "sending" | "sent" | "error">("idle");
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setState("sending");
-    await new Promise((r) => setTimeout(r, 1500));
-    setState("sent");
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (res.ok) {
+        setState("sent");
+      } else {
+        setState("error");
+      }
+    } catch {
+      setState("error");
+    }
   };
 
   const inputClasses =
@@ -47,32 +63,54 @@ export function ContactForm() {
         </motion.div>
       ) : (
         <form onSubmit={handleSubmit} className="space-y-5">
+          {/* Web3Forms required */}
+          <input
+            type="hidden"
+            name="access_key"
+            value={process.env.NEXT_PUBLIC_WEB3FORMS_KEY || ""}
+          />
+          <input type="hidden" name="from_name" value="Portfolio Contact" />
+
           <div className="grid gap-5 sm:grid-cols-2">
             <div>
-              <label htmlFor="name" className="mb-1.5 block text-sm font-medium font-semibold">
+              <label htmlFor="name" className="mb-1.5 block text-sm font-semibold">
                 Name
               </label>
-              <input id="name" required className={inputClasses} placeholder="Your name" />
+              <input id="name" name="name" required className={inputClasses} placeholder="Your name" />
             </div>
             <div>
-              <label htmlFor="email" className="mb-1.5 block text-sm font-medium font-semibold">
+              <label htmlFor="email" className="mb-1.5 block text-sm font-semibold">
                 Email
               </label>
-              <input id="email" type="email" required className={inputClasses} placeholder="you@example.com" />
+              <input id="email" name="email" type="email" required className={inputClasses} placeholder="you@example.com" />
             </div>
           </div>
           <div>
-            <label htmlFor="subject" className="mb-1.5 block text-sm font-medium font-semibold">
+            <label htmlFor="subject" className="mb-1.5 block text-sm font-semibold">
               Subject
             </label>
-            <input id="subject" required className={inputClasses} placeholder="What's this about?" />
+            <input id="subject" name="subject" required className={inputClasses} placeholder="What's this about?" />
           </div>
           <div>
-            <label htmlFor="message" className="mb-1.5 block text-sm font-medium font-semibold">
+            <label htmlFor="message" className="mb-1.5 block text-sm font-semibold">
               Message
             </label>
-            <textarea id="message" required rows={5} className={`${inputClasses} resize-y min-h-[120px]`} placeholder="Your message..." />
+            <textarea
+              id="message"
+              name="message"
+              required
+              rows={5}
+              className={`${inputClasses} resize-y min-h-[120px]`}
+              placeholder="Your message..."
+            />
           </div>
+
+          {state === "error" && (
+            <p className="text-sm text-red-500 font-medium">
+              Failed to send. Please try again later.
+            </p>
+          )}
+
           <Button type="submit" size="lg" disabled={state === "sending"}>
             {state === "sending" ? (
               <>
