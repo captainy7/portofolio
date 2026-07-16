@@ -280,49 +280,36 @@ export const notebooks: {
   excerpt: string;
   date: string;
   tags: string[];
-  content?: string[];
+  contentEn?: string[];
+  contentId?: string[];
 }[] = [
   {
     slug: "perjalanan-dari-smk-ke-software-engineer",
-    title: "Perjalanan: Dari SMK Teknik Komputer Jaringan ke Software Engineer",
+    title: "My Journey: From SMK to Software Engineer",
     excerpt:
-      "Cerita tentang lulus SMK, kerja di pabrik, gagal masuk UGM, sampai akhirnya menemukan jalan jadi Software Engineer melalui RevoU.",
+      "A story about graduating from vocational high school, working in a factory, failing to enter university, and eventually finding my path as a Software Engineer through RevoU.",
     date: "2026-07-16",
-    tags: ["Journey", "Career", "Motivasi", "Belajar"],
-    content: [
-      "Lulus dari SMK Teknik Komputer Jaringan di tanggal 6 Mei 2024. Setelah itu, ada program kerja ke Jepang yang sebenarnya sangat saya minati. Tapi karena saya anak tunggal, orang tua belum mengizinkan saya pergi. Saya pun menghormati keputusan itu.",
-      "Di tanggal 11-12 Mei 2024, saya melamar kerja di PT 2 Kelinci dan diterima sebagai operator produksi. Hampir satu tahun saya bekerja di sana, dan banyak pelajaran berharga yang saya dapat: kerja sama tim, komunikasi, disiplin target, dan etos kerja yang baik.",
-      "Selama bekerja, saya mulai tertarik lagi untuk melanjutkan pendidikan. Bulan Februari 2025 saya resign dengan niat mau kuliah—teknik informatika. Saya ikut ujian SNBT, berharap bisa masuk UGM. Tapi ternyata nilai saya kurang.",
-      "Dari situlah saya mulai cari tahu alternatif lain, dan nemu RevoU—bootcamp Full Stack Software Engineering. Dimulai Oktober 2025 sampai Juni 2026.",
-      "Sebelum RevoU mulai (Juli 2025), saya belajar coding otodidak sambil bantu orang tua jualan di pasar.",
-      "Di RevoU, kita mulai dari Markdown, Git, GitHub. Lanjut HTML semantik, CSS, Tailwind. Project pertama: portfolio. Kemudian JavaScript, TypeScript, Next.js, dan NestJS untuk backend dengan PostgreSQL.",
-      "Puncaknya: Final Project—CrackPOS, inventory management system end-to-end.",
-      "Sekarang saya sedang mengikuti RevoU Next—program job seeker. Perjalanan masih panjang, dan saya bersyukur udah sejauh ini.",
+    tags: ["Journey", "Career", "Motivation", "Learning"],
+    contentEn: [
+      "Graduated from SMK Teknik Komputer Jaringan (Computer and Network Engineering) on May 6, 2024. After graduating, there was a work program to Japan that I was really interested in. But since I'm an only child, my parents didn't allow me to go. I respected their decision.",
+      "Around May 11-12, 2024, I applied for a job at PT 2 Kelinci and was accepted as a production operator. I worked there for almost a year and gained valuable experience: teamwork, communication, target discipline, and a strong work ethic.",
+      "During my time working, I became interested in continuing my education. In February 2025, I resigned with the intention of going to college—informatics engineering. I took the SNBT exam, hoping to get into UGM. But my scores weren't enough.",
+      "That's when I started looking for alternatives and found RevoU—a Full Stack Software Engineering bootcamp. It ran from October 2025 to June 2026.",
+      "Before RevoU started (July 2025), I taught myself coding while helping my parents sell at the market.",
+      "At RevoU, we started with Markdown, Git, GitHub. Then HTML semantic, CSS, Tailwind. First project: portfolio. Then JavaScript, TypeScript, Next.js, and NestJS for backend with PostgreSQL.",
+      "The highlight: Final Project—CrackPOS, an end-to-end inventory management system.",
+      "Now I'm participating in RevoU Next—a job seeker program. The journey is still long, and I'm grateful for how far I've come.",
     ],
-  },
-  {
-    slug: "memahami-react-server-components",
-    title: "Memahami React Server Components",
-    excerpt:
-      "Catatan tentang RSC, kenapa kita butuh, dan gimana cara kerjanya di balik layar.",
-    date: "2026-06-15",
-    tags: ["React", "Frontend", "Server Components"],
-  },
-  {
-    slug: "go-vs-nodejs-2026",
-    title: "Go vs Node.js di 2026: Kapan Pilih Yang Mana?",
-    excerpt:
-      "Perbandingan terbaru dua runtime favorit untuk backend development.",
-    date: "2026-06-10",
-    tags: ["Go", "Node.js", "Backend", "Comparison"],
-  },
-  {
-    slug: "tips-produktivitas-terminal",
-    title: "Tips Produktivitas Terminal untuk Developer",
-    excerpt:
-      "Kumpulan shortcut, alias, dan tools yang bikin kerja di terminal makin cepat.",
-    date: "2026-05-28",
-    tags: ["Terminal", "Productivity", "Tools"],
+    contentId: [
+      "Lulus dari SMK Teknik Komputer Jaringan di tanggal 6 Mei 2024. Setelah itu, ada program kerja ke Jepang yang sebenarnya sangat saya minati. Tapi karena saya anak tunggal, orang tua belum mengizinkan saya pergi.",
+      "Di tanggal 11-12 Mei 2024, saya melamar kerja di PT 2 Kelinci dan diterima sebagai operator produksi. Hampir satu tahun saya bekerja di sana, dan banyak pelajaran berharga: kerja sama tim, komunikasi, disiplin target.",
+      "Selama bekerja, saya mulai tertarik lagi untuk melanjutkan pendidikan. Februari 2025 saya resign, ikut SNBT, berharap bisa masuk UGM. Tapi nilai saya kurang.",
+      "Dari situ saya cari alternatif dan nemu RevoU—bootcamp Full Stack Software Engineering. Oktober 2025 sampai Juni 2026.",
+      "Sebelum RevoU mulai (Juli 2025), saya belajar coding otodidak sambil bantu orang tua jualan di pasar.",
+      "Di RevoU belajar Markdown, Git, GitHub, HTML, CSS, Tailwind, JavaScript, TypeScript, Next.js, NestJS, PostgreSQL.",
+      "Puncaknya: Final Project—CrackPOS, inventory management system end-to-end.",
+      "Sekarang saya mengikuti RevoU Next. Perjalanan masih panjang.",
+    ],
   },
 ];
 
