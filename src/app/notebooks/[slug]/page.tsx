@@ -52,9 +52,14 @@ export default async function NotebookPostPage({ params }: NotebookPageProps) {
             <p className="mt-3 font-medium text-muted-foreground">{post.excerpt}</p>
           </header>
 
-          <div className="font-medium leading-relaxed">
-            <p>{post.excerpt}</p>
-            <p className="mt-4">Full content coming soon.</p>
+          <div className="font-medium leading-relaxed space-y-5">
+            {post.content ? (
+              post.content.map((paragraph, i) => (
+                <p key={i}>{paragraph}</p>
+              ))
+            ) : (
+              <p>{post.excerpt}</p>
+            )}
           </div>
         </div>
       </article>
